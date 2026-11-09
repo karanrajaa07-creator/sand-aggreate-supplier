@@ -1,0 +1,1291 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --charcoal-950: #0c0e11;
+  --charcoal-900: #121418;
+  --charcoal-850: #171a20;
+  --charcoal-800: #20242b;
+  --charcoal-700: #2b3039;
+  
+  --ivory-50: #fdfbf7;
+  --ivory-100: #f6f3eb;
+  --ivory-200: #eae4d5;
+  --ivory-300: #d6cdbc;
+  
+  --sandstone-300: #d4c8b6;
+  --sandstone-400: #c2b29c;
+  --sandstone-500: #a6947b;
+  
+  --gold-300: #e2c991;
+  --gold-400: #d4b572;
+  --gold-500: #c5a059;
+  --gold-600: #a8833e;
+  
+  --earth-600: #494d55;
+  --earth-700: #33363d;
+  --earth-800: #1f2126;
+
+  /* Luxury Easing Curves */
+  --ease-luxury: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-smooth: cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* 1. SMOOTH SCROLLING & BASE TYPOGRAPHY */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 96px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--charcoal-950);
+  color: var(--ivory-200);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: -0.01em;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-heading {
+  font-family: 'Syne', 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.font-serif-luxury {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Luxury hairline accent line */
+.hairline-gold {
+  background: linear-gradient(90deg, transparent 0%, rgba(197, 160, 89, 0.6) 50%, transparent 100%);
+  height: 1px;
+}
+
+/* 2. STICKY NAVBAR ANIMATIONS */
+#main-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 50;
+  transition: background-color 0.4s var(--ease-luxury),
+              border-color 0.4s var(--ease-luxury),
+              box-shadow 0.4s var(--ease-luxury),
+              backdrop-filter 0.4s var(--ease-luxury),
+              padding 0.35s ease;
+  will-change: background-color, border-color, box-shadow;
+}
+
+.navbar-transparent {
+  background: linear-gradient(180deg, rgba(12, 14, 17, 0.85) 0%, rgba(12, 14, 17, 0.4) 60%, rgba(12, 14, 17, 0) 100%) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.navbar-scrolled {
+  background-color: rgba(12, 14, 17, 0.96) !important;
+  backdrop-filter: blur(18px) !important;
+  -webkit-backdrop-filter: blur(18px) !important;
+  border-bottom: 1px solid rgba(197, 160, 89, 0.28) !important;
+  box-shadow: 0 12px 36px -10px rgba(0, 0, 0, 0.9), 0 0 25px -10px rgba(197, 160, 89, 0.18) !important;
+}
+
+/* Active navigation link indicator & unified navbar alignment */
+.nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.375rem; /* 38px */
+  padding: 0 0.55rem;
+  white-space: nowrap;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #c5cdd9;
+  border-radius: 0.625rem;
+  border: 1px solid transparent;
+  line-height: 1;
+  box-sizing: border-box;
+  vertical-align: middle;
+  transition: all 0.25s var(--ease-luxury);
+}
+
+.nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: rgba(197, 160, 89, 0.25);
+}
+
+.nav-link.active-nav,
+.mobile-nav-link.active-nav {
+  color: #d4b572 !important;
+  background-color: rgba(197, 160, 89, 0.12) !important;
+  border-color: rgba(197, 160, 89, 0.4) !important;
+}
+
+.nav-divider {
+  display: inline-block;
+  height: 1.25rem; /* 20px */
+  width: 1px;
+  background-color: rgba(55, 60, 72, 0.7);
+  margin: 0 0.5rem;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.nav-btn-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.375rem; /* 38px */
+  padding: 0 0.65rem;
+  white-space: nowrap;
+  border-radius: 0.625rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: 1px solid rgba(40, 44, 53, 0.8);
+  transition: all 0.25s var(--ease-luxury);
+}
+
+.nav-btn-cart {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.375rem; /* 38px */
+  width: 2.375rem; /* 38px */
+  border-radius: 0.625rem;
+  box-sizing: border-box;
+  vertical-align: middle;
+  border: 1px solid rgba(40, 44, 53, 0.8);
+  transition: all 0.25s var(--ease-luxury);
+}
+
+.btn-nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.375rem; /* 38px */
+  padding: 0 1rem;
+  white-space: nowrap;
+  border-radius: 0.625rem;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1;
+  box-sizing: border-box;
+  vertical-align: middle;
+  transition: all 0.25s var(--ease-luxury);
+}
+
+/* 3. RESPONSIVE MOBILE MENU DRAWER ANIMATIONS */
+#mobile-menu {
+  max-height: 0;
+  opacity: 0;
+  transform: translateY(-10px);
+  overflow: hidden;
+  pointer-events: none;
+  transition: max-height 0.4s var(--ease-luxury),
+              opacity 0.35s var(--ease-luxury),
+              transform 0.35s var(--ease-luxury),
+              padding 0.35s ease;
+  will-change: max-height, opacity, transform;
+}
+
+#mobile-menu.mobile-menu-open {
+  max-height: calc(100vh - 4.5rem);
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+#mobile-menu-btn {
+  transition: transform 0.25s var(--ease-luxury), border-color 0.25s ease;
+}
+
+#mobile-menu-btn:active {
+  transform: scale(0.92);
+}
+
+.mobile-nav-link {
+  transition: color 0.25s ease, background-color 0.25s ease, transform 0.25s ease;
+}
+
+.mobile-nav-link:hover {
+  transform: translateX(4px);
+}
+
+/* 4. SUBTLE REVEAL ON SCROLL ANIMATIONS */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s var(--ease-luxury),
+              transform 0.75s var(--ease-luxury);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+.reveal-fade {
+  opacity: 0;
+  transition: opacity 0.7s var(--ease-luxury);
+  will-change: opacity;
+}
+
+.reveal-fade.is-revealed {
+  opacity: 1;
+  will-change: auto;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.96) translateY(20px);
+  transition: opacity 0.75s var(--ease-luxury),
+              transform 0.75s var(--ease-luxury);
+  will-change: opacity, transform;
+}
+
+.reveal-scale.is-revealed {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  will-change: auto;
+}
+
+/* Stagger transition delay helpers */
+.reveal-delay-100 { transition-delay: 100ms; }
+.reveal-delay-200 { transition-delay: 200ms; }
+.reveal-delay-300 { transition-delay: 300ms; }
+.reveal-delay-400 { transition-delay: 400ms; }
+.reveal-delay-500 { transition-delay: 500ms; }
+
+/* 5. ELEGANT PRODUCT CARD HOVER EFFECTS */
+.luxury-card-hover {
+  position: relative;
+  transition: transform 0.4s var(--ease-luxury),
+              border-color 0.4s ease,
+              box-shadow 0.4s var(--ease-luxury);
+  will-change: transform, box-shadow;
+}
+
+/* Shimmer hairline sweep over top border on hover */
+.luxury-card-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.8), transparent);
+  transition: left 0.75s var(--ease-luxury);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.luxury-card-hover:hover::before {
+  left: 100%;
+}
+
+.luxury-card-hover:hover {
+  transform: translateY(-8px);
+  border-color: rgba(197, 160, 89, 0.55) !important;
+  box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.75), 0 0 35px -8px rgba(197, 160, 89, 0.22) !important;
+}
+
+/* Smooth zoom for images within cards */
+.luxury-card-hover img {
+  transition: transform 0.7s var(--ease-luxury), opacity 0.4s ease, filter 0.4s ease;
+  will-change: transform;
+}
+
+.luxury-card-hover:hover img {
+  transform: scale(1.045);
+  filter: brightness(1.03);
+}
+
+/* 6. PREMIUM BUTTON TRANSITIONS & MICRO-INTERACTIONS */
+.btn-gold,
+a.bg-gold-500,
+button.bg-gold-500,
+.luxury-glow {
+  position: relative;
+  transition: transform 0.25s var(--ease-luxury),
+              background-color 0.25s ease,
+              box-shadow 0.25s var(--ease-luxury),
+              border-color 0.25s ease;
+  will-change: transform, box-shadow;
+}
+
+.btn-gold:hover,
+a.bg-gold-500:hover,
+button.bg-gold-500:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -6px rgba(197, 160, 89, 0.4), 0 4px 12px -2px rgba(197, 160, 89, 0.25);
+}
+
+.btn-gold:active,
+a.bg-gold-500:active,
+button.bg-gold-500:active {
+  transform: translateY(0.5px) scale(0.985);
+}
+
+/* Dark secondary / outline buttons */
+.btn-outline,
+a.bg-charcoal-900:hover,
+button.bg-charcoal-900:hover,
+a.bg-charcoal-850:hover,
+button.bg-charcoal-850:hover {
+  transition: transform 0.25s var(--ease-luxury),
+              background-color 0.25s ease,
+              border-color 0.25s ease,
+              color 0.25s ease;
+}
+
+/* Arrow glide animation inside buttons */
+.group:hover .group-hover\:translate-x-1,
+.group:hover .group-hover\:translate-x-0\.5 {
+  transform: translateX(4px);
+  transition: transform 0.25s var(--ease-luxury);
+}
+
+/* 7. INTERACTIVE MATERIAL CATEGORY FILTERS */
+.category-filter-btn {
+  transition: all 0.28s var(--ease-luxury);
+  cursor: pointer;
+  will-change: transform, background-color;
+}
+
+.category-filter-btn:hover {
+  transform: translateY(-1.5px);
+}
+
+.category-filter-btn.active-category {
+  transform: translateY(-1.5px) scale(1.02);
+}
+
+/* Grid smooth filter fade & transition */
+.grid-filter-fade {
+  opacity: 0;
+  transform: scale(0.98) translateY(12px);
+  transition: opacity 0.3s var(--ease-luxury),
+              transform 0.3s var(--ease-luxury);
+}
+
+.grid-filter-visible {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+/* 8. FUNCTIONAL FORM VALIDATION ANIMATIONS */
+@keyframes field-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.animate-field-shake {
+  animation: field-shake 0.4s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
+.input-error {
+  border-color: #f43f5e !important;
+  box-shadow: 0 0 0 1px #f43f5e, 0 0 15px -3px rgba(244, 63, 94, 0.28) !important;
+  background-color: rgba(244, 63, 94, 0.05) !important;
+}
+
+.field-error-msg {
+  color: #fb7185;
+  font-size: 11px;
+  margin-top: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  animation: field-msg-in 0.25s ease;
+}
+
+@keyframes field-msg-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Form inputs smooth focus transition */
+input, select, textarea {
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #c5a059 !important;
+  box-shadow: 0 0 0 1px #c5a059, 0 0 15px -3px rgba(197, 160, 89, 0.25) !important;
+}
+
+/* Subtle architectural grid pattern */
+.bg-grid-architectural {
+  background-size: 60px 60px;
+  background-image: 
+    linear-gradient(to right, rgba(197, 160, 89, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(197, 160, 89, 0.035) 1px, transparent 1px);
+}
+
+/* Animated scroll indicator bounce */
+@keyframes scroll-bounce {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 0.9;
+  }
+  50% {
+    transform: translateY(8px);
+    opacity: 0.25;
+  }
+}
+
+.animate-scroll-bounce {
+  animation: scroll-bounce 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Elegant architectural glass panel styling */
+.glass-panel {
+  background: rgba(18, 20, 24, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel:hover {
+  border-color: rgba(197, 160, 89, 0.4);
+}
+
+/* Refined minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0c0e11;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2e37;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+/* Custom image overlay gradients */
+.image-scrim {
+  background: linear-gradient(180deg, rgba(12, 14, 17, 0.1) 0%, rgba(12, 14, 17, 0.85) 80%, rgba(12, 14, 17, 0.98) 100%);
+}
+
+.hero-scrim {
+  background: radial-gradient(circle at 65% 40%, rgba(197, 160, 89, 0.06) 0%, transparent 60%),
+              linear-gradient(180deg, rgba(12, 14, 17, 0.4) 0%, rgba(12, 14, 17, 0.85) 65%, #0c0e11 100%);
+}
+
+/* 9. ACCESSIBILITY: REDUCED MOTION PREFERENCE */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal-on-scroll,
+  .reveal-scale,
+  .reveal-fade {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .luxury-card-hover:hover {
+    transform: none !important;
+  }
+  .luxury-card-hover::before {
+    display: none !important;
+  }
+}
+
+/* Print Stylesheet for Formal Quotations */
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #111827 !important;
+  }
+
+  nav, header, footer, .print\:hidden, #vanguard-toast, .quote-badge-count {
+    display: none !important;
+  }
+
+  #quote-confirmation-modal {
+    position: static !important;
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  #quote-confirmation-modal > div {
+    background: transparent !important;
+    padding: 0 !important;
+  }
+
+  #quote-confirmation-modal > div > div {
+    background: #ffffff !important;
+    color: #111827 !important;
+    box-shadow: none !important;
+    border: none !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 24px !important;
+  }
+
+  #quote-confirmation-modal h3,
+  #quote-confirmation-modal h4,
+  #quote-confirmation-modal td,
+  #quote-confirmation-modal th {
+    color: #111827 !important;
+  }
+
+  #quote-confirmation-modal table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  #quote-confirmation-modal table th,
+  #quote-confirmation-modal table td {
+    border-bottom: 1px solid #e5e7eb !important;
+    padding: 8px 4px !important;
+  }
+
+  .text-gold-400, .text-amber-400 {
+    color: #936f2e !important;
+  }
+}
+
+/* =========================================================================
+   NAVBAR DROPDOWN (Home 1 Up & Home 2 Down)
+   ========================================================================= */
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-container .dropdown-menu {
+  transform: translateY(8px);
+  transition: opacity 0.25s var(--ease-luxury),
+              transform 0.25s var(--ease-luxury),
+              visibility 0.25s;
+}
+
+.dropdown-container:hover .dropdown-menu,
+.dropdown-container:focus-within .dropdown-menu {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: translateY(0) !important;
+  pointer-events: auto !important;
+}
+
+/* =========================================================================
+   RTL (RIGHT-TO-LEFT) SUPPORT
+   ========================================================================= */
+html[dir="rtl"] {
+  direction: rtl;
+}
+
+html[dir="rtl"] body {
+  direction: rtl;
+  text-align: right;
+}
+
+html[dir="rtl"] .dropdown-container .dropdown-menu {
+  left: auto !important;
+  right: 0 !important;
+}
+
+html[dir="rtl"] .rtl-mirror {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] [data-lucide="arrow-right"],
+html[dir="rtl"] [data-lucide="chevron-right"],
+html[dir="rtl"] [data-lucide="arrow-up-right"] {
+  transform: scaleX(-1);
+}
+
+html[dir="rtl"] .text-left {
+  text-align: right !important;
+}
+
+html[dir="rtl"] .text-right {
+  text-align: left !important;
+}
+
+/* =========================================================================
+   LIGHT MODE ARCHITECTURAL PALETTE (ULTRA-HIGH CONTRAST & LEGIBILITY)
+   ========================================================================= */
+html.light-mode {
+  color-scheme: light;
+}
+
+html.light-mode body {
+  background-color: #faf8f5 !important;
+  color: #1e2430 !important;
+}
+
+/* Navbar: Pure Luminous Alabaster in Light Mode with High-Contrast Typography */
+html.light-mode #main-navbar,
+html.light-mode #main-navbar.navbar-transparent,
+html.light-mode #main-navbar.navbar-scrolled {
+  background: rgba(255, 255, 255, 0.98) !important;
+  background-image: none !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border-bottom: 1px solid rgba(215, 200, 175, 0.7) !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06), 0 1px 3px rgba(0, 0, 0, 0.03) !important;
+}
+
+html.light-mode #main-nav {
+  background: rgba(255, 255, 255, 0.98) !important;
+  background-image: none !important;
+  border-bottom: 1px solid rgba(215, 200, 175, 0.7) !important;
+}
+
+/* Brand Logo in Light Mode */
+html.light-mode #main-navbar a[aria-label*="Home"] .bg-charcoal-900\/90 {
+  background-color: #ffffff !important;
+  border-color: rgba(197, 160, 89, 0.5) !important;
+  color: #84601c !important;
+  box-shadow: 0 4px 12px rgba(197, 160, 89, 0.12) !important;
+}
+
+html.light-mode #main-navbar .font-heading.text-ivory-50,
+html.light-mode #main-navbar a[aria-label*="Home"] .text-ivory-50 {
+  color: #0c0e12 !important;
+}
+
+html.light-mode #main-navbar .font-heading.text-gold-400,
+html.light-mode #main-navbar a[aria-label*="Home"] .text-gold-400 {
+  color: #735112 !important;
+}
+
+html.light-mode #main-navbar .text-sandstone-400,
+html.light-mode #main-navbar a[aria-label*="Home"] .text-sandstone-400 {
+  color: #4b5563 !important;
+}
+
+/* Desktop Navigation Links in Light Mode - Ultra-High Contrast Dark Typography */
+html.light-mode .nav-link,
+html.light-mode .dropdown-container button.nav-link {
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+html.light-mode .nav-link span,
+html.light-mode .dropdown-container button.nav-link span {
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+html.light-mode .nav-link:hover,
+html.light-mode .dropdown-container button.nav-link:hover {
+  color: #735112 !important;
+  background-color: #f7eed7 !important;
+  border-color: #c5a059 !important;
+}
+
+html.light-mode .nav-link:hover span,
+html.light-mode .dropdown-container button.nav-link:hover span {
+  color: #735112 !important;
+}
+
+/* Active Nav State - Crisp Dark Bronze on Soft Sand Pill (High Contrast WCAG AAA) */
+html.light-mode .nav-link.active-nav,
+html.light-mode .dropdown-container button.nav-link.active-nav,
+html.light-mode .mobile-nav-link.active-nav {
+  color: #3d2903 !important;
+  background-color: #f2e6c8 !important;
+  border: 1px solid #9e7929 !important;
+  font-weight: 800 !important;
+}
+
+html.light-mode .nav-link.active-nav span,
+html.light-mode .dropdown-container button.nav-link.active-nav span,
+html.light-mode .mobile-nav-link.active-nav span {
+  color: #3d2903 !important;
+  font-weight: 800 !important;
+}
+
+html.light-mode .nav-link.active-nav svg,
+html.light-mode .dropdown-container button.nav-link.active-nav svg,
+html.light-mode .nav-link.active-nav [data-lucide],
+html.light-mode .dropdown-container button.nav-link.active-nav [data-lucide],
+html.light-mode .mobile-nav-link.active-nav [data-lucide] {
+  color: #3d2903 !important;
+}
+
+html.light-mode .dropdown-container button.nav-link svg,
+html.light-mode .dropdown-container button.nav-link [data-lucide="chevron-down"] {
+  color: #735112 !important;
+}
+
+/* Dropdown Menu in Light Mode */
+html.light-mode .dropdown-menu .bg-charcoal-900\/98 {
+  background-color: #ffffff !important;
+  border-color: #d8cebe !important;
+  box-shadow: 0 14px 38px -6px rgba(0, 0, 0, 0.15), 0 2px 10px rgba(0, 0, 0, 0.06) !important;
+}
+
+html.light-mode .dropdown-menu a {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+html.light-mode .dropdown-menu a:hover {
+  background-color: #f7eed7 !important;
+  border-color: rgba(197, 160, 89, 0.4) !important;
+}
+
+html.light-mode .dropdown-menu a span.text-ivory-100 {
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+html.light-mode .dropdown-menu a span.text-sandstone-400 {
+  color: #4b5563 !important;
+}
+
+html.light-mode .dropdown-menu a:hover span.text-ivory-100,
+html.light-mode .dropdown-menu a:hover span.text-gold-400 {
+  color: #735112 !important;
+}
+
+html.light-mode .dropdown-menu .bg-charcoal-950 {
+  background-color: #f4ecda !important;
+  border-color: #c5a059 !important;
+  color: #735112 !important;
+}
+
+/* Separator Divider */
+html.light-mode .nav-divider {
+  background-color: rgba(197, 160, 89, 0.5) !important;
+}
+
+/* Right Utility Control Buttons (RTL & Theme toggles, Cart) */
+html.light-mode .nav-btn-control,
+html.light-mode .rtl-toggle-btn,
+html.light-mode .theme-toggle-btn {
+  background-color: #ffffff !important;
+  border-color: #d1c7b7 !important;
+  color: #111827 !important;
+}
+
+html.light-mode .nav-btn-control span,
+html.light-mode .rtl-toggle-btn span,
+html.light-mode .theme-toggle-btn span {
+  color: #111827 !important;
+  font-weight: 700 !important;
+}
+
+html.light-mode .nav-btn-control svg,
+html.light-mode .nav-btn-control [data-lucide],
+html.light-mode .rtl-toggle-btn svg,
+html.light-mode .theme-toggle-btn svg {
+  color: #735112 !important;
+}
+
+html.light-mode .nav-btn-control:hover,
+html.light-mode .rtl-toggle-btn:hover,
+html.light-mode .theme-toggle-btn:hover {
+  border-color: #735112 !important;
+  color: #735112 !important;
+  background-color: #f7eed7 !important;
+}
+
+html.light-mode .nav-btn-control:hover span,
+html.light-mode .rtl-toggle-btn:hover span,
+html.light-mode .theme-toggle-btn:hover span {
+  color: #735112 !important;
+}
+
+html.light-mode .nav-btn-cart {
+  background-color: #ffffff !important;
+  border-color: #dfd7c8 !important;
+  color: #84601c !important;
+}
+
+html.light-mode .nav-btn-cart svg,
+html.light-mode .nav-btn-cart [data-lucide] {
+  color: #84601c !important;
+}
+
+html.light-mode .nav-btn-cart:hover {
+  border-color: #84601c !important;
+  background-color: #faf6ee !important;
+}
+
+html.light-mode .quote-badge-count {
+  background-color: #84601c !important;
+  color: #ffffff !important;
+}
+
+html.light-mode #mobile-menu-btn {
+  background-color: #ffffff !important;
+  border-color: #dfd7c8 !important;
+  color: #0c0e12 !important;
+}
+
+html.light-mode #mobile-menu-btn svg,
+html.light-mode #mobile-menu-btn [data-lucide] {
+  color: #0c0e12 !important;
+}
+
+html.light-mode #mobile-menu-btn:hover {
+  border-color: #84601c !important;
+}
+
+html.light-mode #mobile-menu-btn:hover svg {
+  color: #84601c !important;
+}
+
+html.light-mode .btn-nav-cta {
+  background-color: #c5a059 !important;
+  color: #0c0e11 !important;
+  font-weight: 800 !important;
+  box-shadow: 0 4px 15px rgba(197, 160, 89, 0.35) !important;
+}
+
+html.light-mode .btn-nav-cta:hover {
+  background-color: #b8924b !important;
+}
+
+/* Dropdown menus in light mode */
+html.light-mode .dropdown-menu > div {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-color: #dfd7c8 !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.12), 0 0 15px -3px rgba(197, 160, 89, 0.15) !important;
+}
+
+html.light-mode .dropdown-menu a {
+  color: #0c0e12 !important;
+}
+
+html.light-mode .dropdown-menu a:hover {
+  background-color: #f5f0e6 !important;
+}
+
+html.light-mode .dropdown-menu a span.text-ivory-100 {
+  color: #0c0e12 !important;
+}
+
+html.light-mode .dropdown-menu a span.text-sandstone-400 {
+  color: #556075 !important;
+}
+
+html.light-mode .dropdown-menu a .w-7 {
+  background-color: #faf6ee !important;
+  border-color: rgba(197, 160, 89, 0.3) !important;
+  color: #84601c !important;
+}
+
+/* =========================================================================
+   LIGHT MODE ARCHITECTURAL PALETTE (ULTRA-HIGH CONTRAST & MAXIMUM LEGIBILITY)
+   ========================================================================= */
+html.light-mode {
+  color-scheme: light;
+}
+
+html.light-mode body {
+  background-color: #f8f6f0 !important;
+  color: #0c0e12 !important;
+}
+
+/* Ensure all page hero overlays stay strictly in the background */
+html.light-mode section .absolute.inset-0.z-0 {
+  z-index: 0 !important;
+}
+
+html.light-mode section > .max-w-7xl,
+html.light-mode section > .max-w-5xl,
+html.light-mode section > div:not(.absolute) {
+  position: relative !important;
+  z-index: 10 !important;
+}
+
+/* Hero Background Overlays in Light Mode - Luminous Soft Sandstone */
+html.light-mode .bg-gradient-to-b.from-charcoal-950\/85,
+html.light-mode .bg-gradient-to-b.from-charcoal-950\/90,
+html.light-mode .from-charcoal-950\/85,
+html.light-mode .from-charcoal-950\/90 {
+  background: linear-gradient(180deg, rgba(248, 246, 240, 0.94) 0%, rgba(248, 246, 240, 0.88) 50%, rgba(248, 246, 240, 0.98) 100%) !important;
+}
+
+html.light-mode .hero-scrim {
+  background: radial-gradient(circle at center, transparent 0%, rgba(248, 246, 240, 0.3) 60%, rgba(248, 246, 240, 0.9) 100%) !important;
+}
+
+html.light-mode .image-scrim {
+  background: linear-gradient(180deg, rgba(248, 246, 240, 0.05) 0%, rgba(248, 246, 240, 0.95) 100%) !important;
+}
+
+html.light-mode .bg-grid-architectural {
+  opacity: 0.12 !important;
+  filter: invert(1);
+}
+
+/* Subtle background image in headers */
+html.light-mode section .absolute.inset-0.z-0 img,
+html.light-mode section img.opacity-30,
+html.light-mode section img.opacity-25,
+html.light-mode section img.opacity-20 {
+  opacity: 0.14 !important;
+  filter: brightness(95%) contrast(120%) grayscale(40%) !important;
+  mix-blend-mode: multiply !important;
+}
+
+/* Global Text & Headings in Light Mode - Ultra-High Contrast Pitch Charcoal */
+html.light-mode h1,
+html.light-mode h2,
+html.light-mode h3,
+html.light-mode h4,
+html.light-mode h5,
+html.light-mode h6,
+html.light-mode .font-heading,
+html.light-mode .text-ivory-50,
+html.light-mode .text-ivory-100,
+html.light-mode .text-ivory-200,
+html.light-mode .text-ivory-300 {
+  color: #0c0e12 !important;
+}
+
+/* Paragraphs & Subtitles in Light Mode - Solid Deep Slate */
+html.light-mode p,
+html.light-mode .text-sandstone-200,
+html.light-mode .text-sandstone-300 {
+  color: #1f2937 !important;
+  font-weight: 500;
+}
+
+html.light-mode .text-sandstone-400,
+html.light-mode .text-sandstone-500,
+html.light-mode .text-earth-400 {
+  color: #374151 !important;
+  font-weight: 600 !important;
+}
+
+html.light-mode .text-earth-700 {
+  color: #9ca3af !important;
+}
+
+/* Gold Accents & Highlights in Light Mode - Rich Dark Architectural Bronze (WCAG AAA) */
+html.light-mode .text-gold-300,
+html.light-mode .text-gold-400,
+html.light-mode .text-gold-500,
+html.light-mode .text-amber-400 {
+  color: #785006 !important;
+  font-weight: 700;
+}
+
+html.light-mode h1 span.text-gold-400,
+html.light-mode h2 span.text-gold-400,
+html.light-mode h3 span.text-gold-400,
+html.light-mode .font-heading span.text-gold-400,
+html.light-mode span.text-gold-400 {
+  color: #785006 !important;
+  font-weight: 800 !important;
+}
+
+html.light-mode .text-gold-300\/90,
+html.light-mode .text-gold-400\/80,
+html.light-mode .text-gold-500\/70,
+html.light-mode .text-gold-500\/60,
+html.light-mode .text-gold-500\/50,
+html.light-mode .text-gold-500\/40 {
+  color: #634204 !important;
+  font-weight: 600 !important;
+}
+
+/* Breadcrumbs in Light Mode */
+html.light-mode a.text-sandstone-400 {
+  color: #374151 !important;
+  font-weight: 600 !important;
+}
+
+html.light-mode a.text-sandstone-400:hover {
+  color: #785006 !important;
+}
+
+/* Gradient headline text in Light Mode - Deep Lustrous Architectural Bronze */
+html.light-mode span.text-transparent.bg-clip-text {
+  background-image: linear-gradient(135deg, #785006 0%, #9e7929 50%, #543b08 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+/* Background containers in Light Mode */
+html.light-mode .bg-charcoal-950 {
+  background-color: #ffffff !important;
+}
+
+html.light-mode .bg-charcoal-900 {
+  background-color: #fbf9f4 !important;
+}
+
+html.light-mode .bg-charcoal-850 {
+  background-color: #f3efe6 !important;
+}
+
+html.light-mode .bg-charcoal-800 {
+  background-color: #eae4d6 !important;
+}
+
+html.light-mode .bg-charcoal-900\/90,
+html.light-mode .bg-charcoal-900\/95,
+html.light-mode .bg-charcoal-900\/80,
+html.light-mode .bg-charcoal-950\/90,
+html.light-mode .bg-charcoal-950\/95,
+html.light-mode .bg-charcoal-950\/98,
+html.light-mode .bg-charcoal-950\/80,
+html.light-mode .bg-charcoal-950\/60 {
+  background-color: #ffffff !important;
+}
+
+/* Cards & Borders in Light Mode */
+html.light-mode .border-earth-800,
+html.light-mode .border-earth-700,
+html.light-mode .border-earth-800\/80,
+html.light-mode .border-earth-800\/60 {
+  border-color: #dfd7c8 !important;
+}
+
+html.light-mode .border-gold-500\/20,
+html.light-mode .border-gold-500\/30,
+html.light-mode .border-gold-500\/40,
+html.light-mode .border-gold-700\/60 {
+  border-color: #bfa05d !important;
+}
+
+/* SLA Badges & Information Cards in Light Mode */
+html.light-mode .bg-charcoal-950.border-earth-800,
+html.light-mode .bg-charcoal-900.border-earth-800,
+html.light-mode .bg-charcoal-900.border-gold-500\/60 {
+  background-color: #ffffff !important;
+  border-color: #dfd7c8 !important;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.06) !important;
+}
+
+html.light-mode .bg-charcoal-900.border-gold-500\/20,
+html.light-mode .bg-charcoal-900.border-gold-500\/30,
+html.light-mode .bg-gold-500\/20 {
+  background-color: #f7eed7 !important;
+  border-color: #c5a059 !important;
+  color: #785006 !important;
+}
+
+html.light-mode .bg-charcoal-900.border-gold-500\/20 svg,
+html.light-mode .bg-charcoal-900.border-gold-500\/20 [data-lucide],
+html.light-mode .bg-charcoal-900.border-gold-500\/30 svg,
+html.light-mode .bg-charcoal-900.border-gold-500\/30 [data-lucide],
+html.light-mode .bg-gold-500\/20 svg,
+html.light-mode .bg-gold-500\/20 [data-lucide] {
+  color: #785006 !important;
+}
+
+/* Hero Badge & Pill Chips in Light Mode */
+html.light-mode .inline-flex.rounded-full.bg-charcoal-900\/60,
+html.light-mode .inline-flex.rounded-full.bg-charcoal-900\/90,
+html.light-mode .inline-flex.rounded-full.bg-charcoal-950,
+html.light-mode .inline-flex.rounded-full.border-gold-500\/30,
+html.light-mode .inline-flex.rounded-full.border-gold-500\/20 {
+  background-color: #ffffff !important;
+  border-color: #bfa05d !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+html.light-mode .inline-flex.rounded-full.bg-charcoal-900\/60 *,
+html.light-mode .inline-flex.rounded-full.bg-charcoal-900\/90 *,
+html.light-mode .inline-flex.rounded-full.bg-charcoal-950 *,
+html.light-mode .inline-flex.rounded-full.border-gold-500\/30 * {
+  color: #3d2903 !important;
+  font-weight: 700 !important;
+}
+
+html.light-mode .inline-flex.rounded-full.bg-charcoal-900\/60 svg,
+html.light-mode .inline-flex.rounded-full.bg-charcoal-900\/90 svg,
+html.light-mode .inline-flex.rounded-full.bg-charcoal-950 svg,
+html.light-mode .inline-flex.rounded-full.border-gold-500\/30 svg,
+html.light-mode .inline-flex.rounded-full.border-gold-500\/30 i {
+  color: #785006 !important;
+}
+
+/* Hero Secondary Action Button */
+html.light-mode a.bg-charcoal-900\/90.border-gold-500\/30,
+html.light-mode a.bg-charcoal-900\/90 {
+  background-color: #ffffff !important;
+  border-color: rgba(197, 160, 89, 0.45) !important;
+  color: #0c0e12 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05) !important;
+}
+
+html.light-mode a.bg-charcoal-900\/90:hover {
+  background-color: #faf6ee !important;
+  border-color: #785006 !important;
+}
+
+html.light-mode a.bg-charcoal-900\/90 * {
+  color: #0c0e12 !important;
+}
+
+html.light-mode a.bg-charcoal-900\/90 svg,
+html.light-mode a.bg-charcoal-900\/90 [data-lucide] {
+  color: #785006 !important;
+}
+
+/* Form inputs in light mode - Crisp Alabaster with Dark Text */
+html.light-mode input,
+html.light-mode select,
+html.light-mode textarea {
+  background-color: #ffffff !important;
+  border-color: #d1c7b7 !important;
+  color: #0c0e12 !important;
+}
+
+html.light-mode input::placeholder,
+html.light-mode textarea::placeholder {
+  color: #6b7280 !important;
+}
+
+html.light-mode label {
+  color: #0c0e12 !important;
+  font-weight: 700 !important;
+}
+
+html.light-mode input:focus,
+html.light-mode select:focus,
+html.light-mode textarea:focus {
+  border-color: #785006 !important;
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.25) !important;
+}
+
+/* Cards & Scrims */
+html.light-mode .luxury-card-hover {
+  background-color: #ffffff !important;
+  border-color: #dfd7c8 !important;
+  box-shadow: 0 8px 24px -6px rgba(0, 0, 0, 0.06), 0 0 12px -3px rgba(197, 160, 89, 0.08) !important;
+}
+
+html.light-mode .luxury-card-hover:hover {
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.12), 0 0 24px -5px rgba(197, 160, 89, 0.2) !important;
+}
+
+/* Responsive Mobile Drawer Menu in Light Mode */
+html.light-mode #mobile-menu {
+  background-color: rgba(255, 255, 255, 0.98) !important;
+  border-bottom: 1px solid #dfd7c8 !important;
+}
+
+html.light-mode .mobile-nav-link {
+  color: #0c0e12 !important;
+}
+
+html.light-mode .mobile-nav-link:hover,
+html.light-mode .mobile-nav-link.active-nav {
+  color: #84601c !important;
+  background-color: rgba(197, 160, 89, 0.12) !important;
+}
+
+html.light-mode .mobile-nav-link svg {
+  color: #84601c !important;
+}
+
+/* =========================================================================
+   LIGHT MODE: Commercial CTA Banner & Gradient Containers
+   Fixes black-on-black text bug in light mode (e.g. Home 2 Commercial Banner)
+   ========================================================================= */
+html.light-mode .commercial-cta-banner,
+html.light-mode .bg-gradient-to-r.from-charcoal-950,
+html.light-mode .bg-gradient-to-b.from-charcoal-900.to-charcoal-950,
+html.light-mode .from-charcoal-900.to-charcoal-950 {
+  background: linear-gradient(135deg, #ffffff 0%, #faf7f0 50%, #f4ece0 100%) !important;
+  background-color: #ffffff !important;
+  border-color: rgba(197, 160, 89, 0.45) !important;
+  box-shadow: 0 16px 40px -10px rgba(0, 0, 0, 0.08), 0 0 24px -5px rgba(197, 160, 89, 0.18) !important;
+}
+
+html.light-mode .commercial-cta-banner h3,
+html.light-mode .commercial-cta-banner .text-ivory-50,
+html.light-mode .commercial-cta-banner .text-ivory-100,
+html.light-mode .bg-gradient-to-b.from-charcoal-900.to-charcoal-950 h2,
+html.light-mode .bg-gradient-to-b.from-charcoal-900.to-charcoal-950 h3 {
+  color: #0c0e12 !important;
+}
+
+html.light-mode .commercial-cta-banner p,
+html.light-mode .commercial-cta-banner .text-sandstone-300,
+html.light-mode .commercial-cta-banner .text-sandstone-400,
+html.light-mode .bg-gradient-to-b.from-charcoal-900.to-charcoal-950 p {
+  color: #374151 !important;
+}
+
+html.light-mode .commercial-cta-banner .inline-flex.rounded-full {
+  background-color: #ffffff !important;
+  border-color: #bfa05d !important;
+  color: #785006 !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
+}
+
+html.light-mode .commercial-cta-banner .inline-flex.rounded-full span.bg-gold-400 {
+  background-color: #785006 !important;
+}
+
+html.light-mode .commercial-cta-banner a.bg-charcoal-950 {
+  background-color: #ffffff !important;
+  border-color: rgba(197, 160, 89, 0.5) !important;
+  color: #0c0e12 !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06) !important;
+}
+
+html.light-mode .commercial-cta-banner a.bg-charcoal-950:hover {
+  background-color: #faf6ee !important;
+  border-color: #785006 !important;
+}
+
+html.light-mode .commercial-cta-banner a.bg-charcoal-950 svg,
+html.light-mode .commercial-cta-banner a.bg-charcoal-950 [data-lucide] {
+  color: #785006 !important;
+}
+
+/* Status & Telemetry text adjustments for Light Mode */
+html.light-mode .text-emerald-400 {
+  color: #047857 !important;
+}
+
+html.light-mode .bg-emerald-500\/10 {
+  background-color: rgba(4, 120, 87, 0.08) !important;
+  border-color: rgba(4, 120, 87, 0.25) !important;
+}
+
+html.light-mode .bg-gold-500\/10 {
+  background-color: rgba(197, 160, 89, 0.12) !important;
+  border-color: rgba(197, 160, 89, 0.35) !important;
+}
+
+

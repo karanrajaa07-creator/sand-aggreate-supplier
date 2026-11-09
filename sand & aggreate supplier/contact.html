@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Quotation Desk | Vanguard Aggregates & Minerals</title>
+  <meta name="description" content="Request a formal written quote for primary quarried aggregates, sands, and precision haulage. Speak with central dispatch or visit our quarry weighbridge hubs.">
+  
+  <!-- Tailwind CSS CDN with Custom Architectural Palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: {
+              950: '#0c0e11',
+              900: '#121418',
+              850: '#171a20',
+              800: '#20242b',
+              700: '#2b3039',
+            },
+            ivory: {
+              50: '#fdfbf7',
+              100: '#f6f3eb',
+              200: '#eae4d5',
+              300: '#d6cdbc',
+            },
+            sandstone: {
+              300: '#d4c8b6',
+              400: '#c2b29c',
+              500: '#a6947b',
+            },
+            gold: {
+              300: '#e2c991',
+              400: '#d4b572',
+              500: '#c5a059',
+              600: '#a8833e',
+              950: '#1a1409',
+            },
+            earth: {
+              600: '#494d55',
+              700: '#33363d',
+              800: '#1f2126',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Syne"', '"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cinzel"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Architectural Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css?v=2.3">
+</head>
+<body class="bg-charcoal-950 text-ivory-200 flex flex-col min-h-screen selection:bg-gold-500 selection:text-charcoal-950">
+
+        <!-- Fixed Sticky Navigation Bar: Transparent over hero section, solid luxury background on scroll -->
+  <nav id="main-navbar" class="fixed top-0 left-0 right-0 z-50 navbar-transparent transition-all duration-300">
+    <!-- Main Navigation Container -->
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 sm:h-22 gap-2 xl:gap-4 transition-all duration-300">
+        <!-- Company Logo & Brand Name -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0" aria-label="Vanguard Minerals Home">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-charcoal-900/90 border border-gold-500/40 flex items-center justify-center text-gold-400 shadow-lg shadow-gold-500/10 group-hover:border-gold-400 group-hover:scale-105 transition duration-300 shrink-0">
+            <i data-lucide="layers" class="w-4 h-4 sm:w-5 sm:h-5 stroke-[2]"></i>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center gap-1.5 leading-none">
+              <span class="text-lg sm:text-xl xl:text-2xl font-black tracking-tight text-ivory-50 font-heading">VANGUARD</span>
+              <span class="text-lg sm:text-xl xl:text-2xl font-black tracking-tight text-gold-400 font-heading">MINERALS</span>
+            </div>
+            <p class="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-sandstone-400 font-medium mt-1 hidden xs:block leading-none">Architectural Aggregates</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links (All on identical horizontal baseline) -->
+        <div class="hidden lg:flex items-center gap-1 xl:gap-1.5 text-[11px] font-bold tracking-wider uppercase whitespace-nowrap shrink-0">
+          <!-- Home Editions Dropdown (Home 1 Up, Home 2 Down) -->
+          <div class="relative group dropdown-container">
+            <button type="button" class="nav-link flex items-center gap-1 cursor-pointer" aria-expanded="false" aria-haspopup="true">
+              <span>HOME</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180 text-gold-400/80"></i>
+            </button>
+            <div class="dropdown-menu absolute left-0 rtl:left-auto rtl:right-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 pointer-events-none group-hover:pointer-events-auto">
+              <div class="bg-charcoal-900/98 backdrop-blur-2xl border border-earth-700/80 rounded-2xl p-2.5 shadow-2xl space-y-1.5">
+                <!-- Home 1 (Up) -->
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-charcoal-800/90 text-sandstone-200 hover:text-gold-400 transition text-[11px] font-bold tracking-normal normal-case border border-transparent hover:border-gold-500/30 group/item">
+                  <div class="w-7 h-7 rounded-lg bg-charcoal-950 flex items-center justify-center text-gold-400 border border-gold-500/20 group-hover/item:border-gold-400 shrink-0">
+                    <i data-lucide="home" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div class="flex flex-col text-left rtl:text-right">
+                    <span class="text-xs font-bold text-ivory-100 group-hover/item:text-gold-400 uppercase tracking-wider">Home 1</span>
+                    <span class="text-[10px] text-sandstone-400 font-normal">Alluvial & Quarried Minerals</span>
+                  </div>
+                </a>
+                <!-- Home 2 (Down) -->
+                <a href="home-2.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-charcoal-800/90 text-sandstone-200 hover:text-gold-400 transition text-[11px] font-bold tracking-normal normal-case border border-transparent hover:border-gold-500/30 group/item">
+                  <div class="w-7 h-7 rounded-lg bg-charcoal-950 flex items-center justify-center text-gold-400 border border-gold-500/20 group-hover/item:border-gold-400 shrink-0">
+                    <i data-lucide="compass" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div class="flex flex-col text-left rtl:text-right">
+                    <span class="text-xs font-bold text-ivory-100 group-hover/item:text-gold-400 uppercase tracking-wider">Home 2</span>
+                    <span class="text-[10px] text-sandstone-400 font-normal">Civil & Mega-Infrastructure</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="products.html" class="nav-link">SHOP</a>
+          <a href="about.html" class="nav-link">ABOUT US</a>
+          <a href="delivery.html" class="nav-link">SERVICES</a>
+          <a href="blog.html" class="nav-link">BLOG</a>
+          <a href="pricing.html" class="nav-link">PRICING</a>
+          <a href="contact.html" class="nav-link active-nav">CONTACT</a>
+        </div>
+
+        <!-- Right Side Controls & CTA (With clear separation divider) -->
+        <div class="hidden sm:flex items-center gap-1.5 xl:gap-2 shrink-0">
+          <!-- Elegant Vertical Divider separating Nav Links from Controls -->
+          <div class="nav-divider hidden lg:block"></div>
+
+          <!-- LTR / RTL Toggle -->
+          <button type="button" id="rtl-toggle-btn" class="nav-btn-control bg-charcoal-900/80 border border-earth-800 hover:border-gold-500/50 text-sandstone-300 hover:text-gold-400 transition flex items-center gap-1.5 cursor-pointer" title="Toggle LTR / RTL Direction" aria-label="Toggle Text Direction">
+            <i data-lucide="languages" class="w-4 h-4 text-gold-400"></i>
+            <span class="rtl-label text-[10px] uppercase font-bold tracking-wider">RTL</span>
+          </button>
+
+          <!-- Light / Dark Mode Toggle -->
+          <button type="button" id="theme-toggle-btn" class="nav-btn-control bg-charcoal-900/80 border border-earth-800 hover:border-gold-500/50 text-sandstone-300 hover:text-gold-400 transition flex items-center gap-1.5 cursor-pointer" title="Toggle Light / Dark Mode" aria-label="Toggle Theme Mode">
+            <i data-lucide="sun" class="theme-icon-sun w-4 h-4 text-gold-400 hidden"></i>
+            <i data-lucide="moon" class="theme-icon-moon w-4 h-4 text-gold-400"></i>
+            <span class="theme-label hidden xl:inline text-[10px] uppercase font-bold tracking-wider font-mono">LIGHT</span>
+          </button>
+
+          <!-- Active Quotation Items Counter -->
+          <a href="contact.html#quote-builder" class="nav-btn-cart bg-charcoal-900/80 border border-earth-800 hover:border-gold-500/50 text-ivory-200 transition relative" title="Active Quotation Items">
+            <i data-lucide="clipboard-list" class="w-4 h-4 text-gold-400"></i>
+            <span class="quote-badge-count hidden px-1.5 py-0.2 rounded-full bg-gold-500 text-charcoal-950 font-bold text-[9px] font-mono absolute -top-1 -right-1">0</span>
+          </a>
+
+          <!-- Highlighted Gold "Request a Quote" Button -->
+          <a href="contact.html#quote-builder" class="btn-nav-cta bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold transition shadow-lg shadow-gold-500/25 luxury-glow flex items-center gap-1.5 xl:gap-2 group">
+            <span>REQUEST A QUOTE</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform rtl:group-hover:-translate-x-0.5"></i>
+          </a>
+        </div>
+
+        <!-- Mobile / Tablet Controls & Hamburger -->
+        <div class="flex items-center gap-1.5 lg:hidden">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-xl bg-charcoal-900/80 border border-earth-800 text-sandstone-300 hover:text-gold-400 text-xs font-mono font-bold" title="Toggle LTR / RTL">
+            <span class="rtl-label text-[10px]">RTL</span>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-xl bg-charcoal-900/80 border border-earth-800 text-sandstone-300 hover:text-gold-400 text-xs" title="Toggle Light / Dark Mode">
+            <i data-lucide="sun" class="theme-icon-sun w-4 h-4 text-gold-400 hidden"></i>
+            <i data-lucide="moon" class="theme-icon-moon w-4 h-4 text-gold-400"></i>
+          </button>
+          <a href="contact.html#quote-builder" class="px-3 py-2 rounded-xl bg-gold-500 text-charcoal-950 font-bold text-[11px] uppercase tracking-wider sm:hidden shadow-md">
+            Quote
+          </a>
+          <button id="mobile-menu-btn" class="p-2 text-sandstone-300 hover:text-white rounded-xl bg-charcoal-900/80 border border-earth-800 hover:border-gold-500/40 transition focus:outline-none" aria-label="Toggle Navigation Drawer">
+            <i data-lucide="menu" id="mobile-menu-icon" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Responsive Mobile Drawer Menu (Full width, elegant alignment) -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-charcoal-950/98 backdrop-blur-2xl border-b border-earth-800 px-6 pt-5 pb-8 space-y-4 shadow-2xl max-h-[calc(100vh-5rem)] overflow-y-auto">
+      <div class="flex flex-col space-y-1 text-xs font-semibold tracking-wider uppercase divide-y divide-earth-800/40">
+        <!-- Home Editions (Home 1 Up, Home 2 Down) -->
+        <div class="py-2.5">
+          <span class="text-[10px] font-mono uppercase tracking-widest text-gold-400 block mb-1.5 px-1">Home Editions</span>
+          <div class="space-y-1 pl-2 rtl:pl-0 rtl:pr-2 border-l border-gold-500/30 rtl:border-l-0 rtl:border-r">
+            <a href="index.html" class="mobile-nav-link flex items-center justify-between py-2 text-sandstone-300 hover:text-gold-400 transition">
+              <span class="flex items-center gap-2.5"><i data-lucide="home" class="w-3.5 h-3.5 text-gold-400"></i> Home 1 (Alluvial & Minerals)</span>
+              <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+            </a>
+            <a href="home-2.html" class="mobile-nav-link flex items-center justify-between py-2 text-sandstone-300 hover:text-gold-400 transition">
+              <span class="flex items-center gap-2.5"><i data-lucide="compass" class="w-3.5 h-3.5 text-gold-400"></i> Home 2 (Mega Infrastructure)</span>
+              <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+            </a>
+          </div>
+        </div>
+
+        <a href="products.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="package" class="w-4 h-4 text-gold-400/80"></i> Shop (Materials)</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="about.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="landmark" class="w-4 h-4 text-gold-400/80"></i> About Us</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="delivery.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="truck" class="w-4 h-4 text-gold-400/80"></i> Services & Fleet</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="blog.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="book-open" class="w-4 h-4 text-gold-400/80"></i> Blog & Guides</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="pricing.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="badge-dollar-sign" class="w-4 h-4 text-gold-400/80"></i> Pricing & Tariffs</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="contact.html" class="mobile-nav-link active-nav !text-gold-400 bg-charcoal-900/60 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-gold-400/80"></i> Contact & Quotation</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+      </div>
+
+      <!-- Highlighted Request a Quote Button & Phone Support -->
+      <div class="pt-4 flex flex-col gap-3">
+        <a href="contact.html#quote-builder" class="w-full text-center py-3.5 bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold rounded-xl text-xs uppercase tracking-widest transition shadow-lg shadow-gold-500/25 flex items-center justify-center gap-2">
+          <span>Request a Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <div class="flex items-center justify-between pt-2 px-1 text-xs text-sandstone-400 font-mono">
+          <a href="tel:08008482626" class="flex items-center gap-2 text-gold-400 hover:text-gold-300 transition">
+            <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+            (0800) 848-2626
+          </a>
+          <span class="text-earth-700">•</span>
+          <span>06:00 – 17:30 Mon-Fri</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO (Transparent Navbar Floats Above Banner) -->
+  <section class="relative bg-charcoal-950 overflow-hidden pt-36 pb-16 sm:pt-44 sm:pb-24 border-b border-earth-800">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=2000&q=85" alt="Quarry Dispatch & Testing Operations" class="w-full h-full object-cover object-center opacity-20 mix-blend-luminosity filter brightness-75">
+      <div class="absolute inset-0 bg-gradient-to-b from-charcoal-950/85 via-charcoal-950/70 to-charcoal-950"></div>
+      <div class="absolute inset-0 hero-scrim pointer-events-none"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-8">
+        <div>
+          <div class="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-gold-400 mb-3">
+            <a href="index.html" class="text-sandstone-400 hover:text-ivory-100">Home</a>
+            <span class="text-earth-700">/</span>
+            <span>Contact & Quotation</span>
+          </div>
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-ivory-50 uppercase tracking-tight font-heading leading-tight">
+            Let's Build <span class="text-gold-400">Something Strong.</span>
+          </h1>
+          <p class="mt-3 text-sandstone-300 text-sm sm:text-base max-w-2xl leading-relaxed font-light">
+            Connect directly with our central weighbridge logistics desk or submit your project specification below for a binding 30-day written quotation with site delivery schedule.
+          </p>
+        </div>
+
+        <div class="bg-charcoal-950 p-6 rounded-3xl border border-earth-800 flex items-center gap-5 text-xs shadow-xl shrink-0">
+          <div class="p-3.5 rounded-2xl bg-charcoal-900 border border-gold-500/20 text-gold-400 shrink-0">
+            <i data-lucide="clock" class="w-6 h-6"></i>
+          </div>
+          <div>
+            <span class="text-earth-400 block font-medium uppercase tracking-wider text-[10px]">Average Quotation SLA</span>
+            <span class="text-ivory-50 font-bold text-base font-heading">Under 30 Minutes</span>
+            <span class="text-gold-400 block text-[11px] font-medium mt-0.5 font-mono">Weighbridge desk open now</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ELEGANT CONTACT INFORMATION SHOWCASE (4 CARDS) -->
+  <section class="py-14 sm:py-16 bg-charcoal-900 border-b border-earth-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Header -->
+      <div class="mb-10 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+        <div>
+          <span class="text-xs uppercase font-bold tracking-widest text-gold-400 block mb-1">
+            Central Logistics & Weighbridge Network
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-ivory-50 uppercase tracking-tight font-heading">
+            Direct Contact & Quarry Dispatch
+          </h2>
+        </div>
+        <div class="flex items-center gap-2 self-center sm:self-auto text-xs text-sandstone-300 font-mono">
+          <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+          <span>Weighbridge Queues Clear • Live HGV Haulage Active</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-xs">
+        <!-- Card 1: Telephone Support -->
+        <div class="p-6 rounded-3xl bg-charcoal-950 border border-earth-800 hover:border-gold-500/40 transition-all duration-300 shadow-xl group">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-2xl bg-charcoal-900 border border-gold-500/30 text-gold-400 flex items-center justify-center group-hover:scale-105 transition">
+              <i data-lucide="phone-call" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold tracking-widest text-gold-400 font-heading block">Telephone Support</span>
+              <span class="text-[10px] text-earth-400 font-mono">Quarry Hotline</span>
+            </div>
+          </div>
+          <div class="space-y-2 pt-2 border-t border-earth-800/80">
+            <div>
+              <span class="text-earth-400 block text-[10px] uppercase font-semibold">Toll-Free Dispatch Desk:</span>
+              <a href="tel:08008482626" class="text-gold-400 hover:text-gold-300 font-mono font-bold text-base block mt-0.5">(0800) 848-2626</a>
+            </div>
+            <div>
+              <span class="text-earth-400 block text-[10px] uppercase font-semibold">Commercial Civils Direct:</span>
+              <a href="tel:01632960844" class="text-ivory-100 hover:text-gold-400 font-mono text-[11px] block mt-0.5">+44 (0) 1632 960844</a>
+            </div>
+            <div>
+              <span class="text-earth-400 block text-[10px] uppercase font-semibold">Out-Of-Hours Emergency Line:</span>
+              <span class="text-gold-300/90 font-mono text-[11px] block mt-0.5">+44 (0) 1632 960845</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Email Address -->
+        <div class="p-6 rounded-3xl bg-charcoal-950 border border-earth-800 hover:border-gold-500/40 transition-all duration-300 shadow-xl group">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-2xl bg-charcoal-900 border border-gold-500/30 text-gold-400 flex items-center justify-center group-hover:scale-105 transition">
+              <i data-lucide="mail" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold tracking-widest text-gold-400 font-heading block">Email Address</span>
+              <span class="text-[10px] text-earth-400 font-mono">Direct Inboxes</span>
+            </div>
+          </div>
+          <div class="space-y-2 pt-2 border-t border-earth-800/80">
+            <div>
+              <span class="text-earth-400 block text-[10px] uppercase font-semibold">Haulage & Orders:</span>
+              <a href="mailto:dispatch@vanguardaggregates.co.uk" class="text-ivory-100 hover:text-gold-400 font-mono block font-semibold text-[11px] truncate mt-0.5">dispatch@vanguardaggregates.co.uk</a>
+            </div>
+            <div>
+              <span class="text-earth-400 block text-[10px] uppercase font-semibold">Quotation Calculations:</span>
+              <a href="mailto:quotes@vanguardaggregates.co.uk" class="text-sandstone-300 hover:text-gold-400 font-mono block text-[11px] truncate mt-0.5">quotes@vanguardaggregates.co.uk</a>
+            </div>
+            <div>
+              <span class="text-earth-400 block text-[10px] uppercase font-semibold">Commercial Tender Desk:</span>
+              <a href="mailto:tenders@vanguardaggregates.co.uk" class="text-sandstone-300 hover:text-gold-400 font-mono block text-[11px] truncate mt-0.5">tenders@vanguardaggregates.co.uk</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Business Location -->
+        <div class="p-6 rounded-3xl bg-charcoal-950 border border-earth-800 hover:border-gold-500/40 transition-all duration-300 shadow-xl group">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-2xl bg-charcoal-900 border border-gold-500/30 text-gold-400 flex items-center justify-center group-hover:scale-105 transition">
+              <i data-lucide="map-pin" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold tracking-widest text-gold-400 font-heading block">Business Location</span>
+              <span class="text-[10px] text-earth-400 font-mono">Central Hub</span>
+            </div>
+          </div>
+          <div class="space-y-1.5 pt-2 border-t border-earth-800/80">
+            <strong class="text-ivory-50 block font-heading text-sm">Vanguard Quarry Hub</strong>
+            <p class="text-sandstone-300 font-light leading-relaxed text-[11px]">Mineral Way, Granite Ridge, Midlands, B78 3EQ, United Kingdom</p>
+            <div class="mt-2 text-[10px] font-mono text-gold-400 flex items-center gap-1.5">
+              <i data-lucide="navigation" class="w-3 h-3 text-gold-400"></i>
+              <span>GPS Gate: 52°36'14"N 1°44'28"W</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Business Hours -->
+        <div class="p-6 rounded-3xl bg-charcoal-950 border border-earth-800 hover:border-gold-500/40 transition-all duration-300 shadow-xl group">
+          <div class="flex items-center gap-3 mb-4">
+            <div class="w-10 h-10 rounded-2xl bg-charcoal-900 border border-gold-500/30 text-gold-400 flex items-center justify-center group-hover:scale-105 transition">
+              <i data-lucide="calendar" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="text-xs uppercase font-bold tracking-widest text-gold-400 font-heading block">Business Hours</span>
+              <span class="text-[10px] text-earth-400 font-mono">Weighbridge Desk</span>
+            </div>
+          </div>
+          <div class="space-y-1.5 pt-2 border-t border-earth-800/80 font-mono text-[11px]">
+            <div class="flex justify-between text-sandstone-300">
+              <span class="font-sans text-earth-400">Mon–Fri:</span>
+              <strong class="text-ivory-100">06:00 – 17:30</strong>
+            </div>
+            <div class="flex justify-between text-sandstone-300">
+              <span class="font-sans text-earth-400">Saturday:</span>
+              <strong class="text-ivory-100">07:00 – 12:30</strong>
+            </div>
+            <div class="flex justify-between text-gold-400">
+              <span class="font-sans text-gold-400/80">Sunday:</span>
+              <span class="font-bold">Emergency Civils</span>
+            </div>
+            <div class="mt-2 pt-2 border-t border-earth-800/60 flex items-center gap-1.5 text-[10px] text-emerald-400">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+              <span>Weighbridges currently operational</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERACTIVE QUOTE BUILDER & CONTACT FORM -->
+  <section class="py-20 sm:py-28 bg-charcoal-950 border-b border-earth-800" id="quote-builder">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <!-- Main Form Column (8 cols) -->
+        <div class="lg:col-span-8">
+          
+          <!-- Dynamic Error Alert Banner (Hidden by default; revealed on validation or network failure) -->
+          <div id="quote-error-banner" class="hidden mb-6 p-5 rounded-2xl bg-rose-950/90 border border-rose-500/60 text-xs text-rose-200 flex items-start gap-3.5 shadow-2xl">
+            <div class="w-8 h-8 rounded-xl bg-rose-900/60 border border-rose-400/40 text-rose-300 flex items-center justify-center shrink-0">
+              <i data-lucide="alert-circle" class="w-4 h-4"></i>
+            </div>
+            <div class="flex-1">
+              <strong class="font-bold block text-sm text-white font-heading">Quotation Submission Notice</strong>
+              <span id="quote-error-message" class="leading-relaxed mt-0.5 block text-rose-200">Please complete all required fields highlighted in red below.</span>
+            </div>
+            <button type="button" onclick="document.getElementById('quote-error-banner').classList.add('hidden')" class="text-rose-400 hover:text-white p-1">
+              <i data-lucide="x" class="w-4 h-4"></i>
+            </button>
+          </div>
+
+          <!-- Dynamic Success Confirmation Card (Hidden by default; revealed when real server returns HTTP 200) -->
+          <div id="quote-success-card" class="hidden p-8 sm:p-10 rounded-3xl bg-charcoal-900 border border-gold-500/60 shadow-2xl relative mb-10">
+            <div class="w-16 h-16 rounded-2xl bg-gold-500/20 text-gold-400 border border-gold-500/40 flex items-center justify-center mx-auto mb-5">
+              <i data-lucide="check-circle" class="w-8 h-8"></i>
+            </div>
+
+            <div class="text-center max-w-xl mx-auto">
+              <span class="px-4 py-1.5 rounded-full bg-gold-950 text-gold-400 font-mono font-bold text-xs uppercase tracking-wider border border-gold-700/60 inline-block mb-3" id="success-ref-code">
+                VNG-QTE-00000
+              </span>
+              <h3 class="text-2xl sm:text-3xl font-black text-ivory-50 uppercase tracking-tight font-heading">
+                Quotation Request Transmitted
+              </h3>
+              <p class="text-xs sm:text-sm text-sandstone-300 mt-2 leading-relaxed font-light">
+                Your quotation request has been officially logged in our central weighbridge queue. An authorized logistics surveyor will review transit radiuses and contact you with a binding 30-day PDF quotation within 30 minutes.
+              </p>
+            </div>
+
+            <!-- Itemized Specification Summary -->
+            <div class="my-8 p-5 rounded-2xl bg-charcoal-950 border border-earth-800 text-xs">
+              <span class="text-[10px] uppercase font-bold tracking-widest text-gold-400 block mb-3 font-heading">Order Summary Record</span>
+              <div id="success-quote-summary" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <!-- Injected dynamically on success -->
+              </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-4 border-t border-earth-800">
+              <button type="button" onclick="window.print()" class="px-6 py-3 bg-charcoal-800 hover:bg-charcoal-700 text-ivory-200 rounded-xl text-xs font-bold uppercase tracking-wider border border-earth-700 transition flex items-center gap-2">
+                <i data-lucide="printer" class="w-4 h-4 text-gold-400"></i>
+                <span>Print Record</span>
+              </button>
+              <a href="tel:08008482626" class="px-6 py-3 bg-charcoal-950 hover:bg-charcoal-850 text-gold-400 border border-gold-500/40 rounded-xl text-xs font-bold uppercase tracking-wider transition flex items-center gap-2 font-mono">
+                <i data-lucide="phone-call" class="w-4 h-4"></i>
+                <span>(0800) 848-2626</span>
+              </a>
+              <button type="button" onclick="resetQuoteForm()" class="px-6 py-3 bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold text-xs uppercase tracking-wider rounded-xl transition shadow-lg shadow-gold-500/25 luxury-glow">
+                Submit Another Quote
+              </button>
+            </div>
+          </div>
+
+          <!-- Professional Quote Request Form -->
+          <form id="professional-quote-form" onsubmit="submitProfessionalQuote(event)" class="bg-charcoal-900 border border-earth-800 rounded-3xl p-8 sm:p-10 shadow-2xl relative">
+            <div class="border-b border-earth-800 pb-6 mb-8 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <h3 class="text-xl sm:text-2xl font-black text-ivory-50 uppercase tracking-wide font-heading">
+                  Request a Formal Quotation
+                </h3>
+                <p class="text-xs text-sandstone-400 mt-1 font-light">
+                  Fields marked with <span class="text-gold-400 font-bold">*</span> are required for formal weighbridge dispatch calculation.
+                </p>
+              </div>
+              <div class="flex items-center gap-2 text-xs text-sandstone-400 font-mono">
+                <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+                <span>Direct API Connection</span>
+              </div>
+            </div>
+
+            <div class="space-y-6">
+              <!-- Field 1 & 2: Full Name & Company Name -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="quote-fullname" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Full Name <span class="text-gold-400">*</span>
+                  </label>
+                  <input type="text" id="quote-fullname" name="fullName" required placeholder="e.g. Marcus Vance" class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-ivory-50 placeholder-earth-500 focus:outline-none focus:border-gold-500 transition font-medium">
+                </div>
+
+                <div>
+                  <label for="quote-company" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Company Name
+                  </label>
+                  <input type="text" id="quote-company" name="companyName" placeholder="e.g. Vance Civil Engineering Ltd (or Private)" class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-ivory-50 placeholder-earth-500 focus:outline-none focus:border-gold-500 transition font-medium">
+                </div>
+              </div>
+
+              <!-- Field 3 & 4: Email Address & Phone Number -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="quote-email" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Email Address <span class="text-gold-400">*</span>
+                  </label>
+                  <input type="email" id="quote-email" name="email" required placeholder="e.g. marcus@vancecivils.co.uk" class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-ivory-50 placeholder-earth-500 focus:outline-none focus:border-gold-500 transition font-medium">
+                </div>
+
+                <div>
+                  <label for="quote-phone" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Phone Number <span class="text-gold-400">*</span>
+                  </label>
+                  <input type="tel" id="quote-phone" name="phone" required placeholder="e.g. 07700 900888" class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-ivory-50 font-mono placeholder-earth-500 focus:outline-none focus:border-gold-500 transition font-medium">
+                </div>
+              </div>
+
+              <!-- Field 5 & 6: Material Type & Required Quantity -->
+              <div class="grid grid-cols-1 sm:grid-cols-12 gap-5">
+                <div class="sm:col-span-7">
+                  <label for="quote-material" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Material Type <span class="text-gold-400">*</span>
+                  </label>
+                  <select id="quote-material" name="materialType" required class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs text-ivory-50 focus:outline-none focus:border-gold-500 transition font-medium">
+                    <option value="" disabled selected>-- Select Certified Material Specification --</option>
+                    
+                    <optgroup label="1. Sand">
+                      <option value="River Sand (Natural Alluvial Silica)">River Sand (Natural Alluvial Silica - 0-4mm)</option>
+                      <option value="Sharp Sand (Concrete & Screed Sand)">Sharp Sand (Concrete & Screed - 0-4mm)</option>
+                      <option value="Soft Building Sand (Warm Sandstone)">Soft Building Sand (Warm Sandstone - 0-2mm)</option>
+                      <option value="Kiln-Dried Silica Sand">Kiln-Dried Silica Sand (Joint Lock)</option>
+                      <option value="Coarse Washed Grit Sand">Coarse Washed Grit Sand (Granite Grit)</option>
+                      <option value="Silver Horticultural & Play Sand">Silver Horticultural & Play Sand (Non-Toxic)</option>
+                    </optgroup>
+
+                    <optgroup label="2. Manufactured Sand">
+                      <option value="M-Sand (Manufactured Concrete Sand - VSI)">M-Sand (Manufactured Concrete Sand VSI - 0-4mm)</option>
+                      <option value="P-Sand (Manufactured Plastering Sand)">P-Sand (Manufactured Plastering Sand - 0-2.36mm)</option>
+                      <option value="Granite Micro-Sand (Ultra-Fine)">Granite Micro-Sand (Ultra-Fine - 0-1.18mm)</option>
+                      <option value="Basalt Engineered VSI Sand">Basalt Engineered VSI Sand (Heavy Duty)</option>
+                    </optgroup>
+
+                    <optgroup label="3. Aggregates">
+                      <option value="10mm Single-Size Concrete Aggregate">10mm Single-Size Concrete Aggregate</option>
+                      <option value="20mm Single-Size Concrete Aggregate">20mm Single-Size Concrete Aggregate</option>
+                      <option value="40mm Clean Drainage Aggregate">40mm Clean Drainage Aggregate (Zero Fines)</option>
+                      <option value="All-In Ballast (0 - 20mm Concreting Mix)">All-In Ballast (0-20mm Concreting Mix)</option>
+                      <option value="Recycled Concrete Aggregate (Type 1 RCA)">Recycled Concrete Aggregate (Type 1 RCA)</option>
+                      <option value="6F2 Primary Capping Aggregate">6F2 Primary Capping Aggregate (0-75mm)</option>
+                    </optgroup>
+
+                    <optgroup label="4. Gravel">
+                      <option value="10mm Pea Gravel (River Pea Shingle)">10mm Pea Gravel (River Pea Shingle)</option>
+                      <option value="20mm Washed Driveway Shingle (Flint)">20mm Washed Driveway Shingle (Flint Shingle)</option>
+                      <option value="Cotswold Buff Chippings (Limestone)">Cotswold Buff Chippings (14-20mm Angular)</option>
+                      <option value="Golden Flint Gravel (20mm Multi-Tone)">Golden Flint Gravel (20mm Multi-Tone)</option>
+                      <option value="Welsh Plum Slate Paddlestones (40mm)">Welsh Plum Slate Paddlestones (20-40mm)</option>
+                      <option value="Marine Washed Shingle (10 - 20mm)">Marine Washed Shingle (Coastal Flint)</option>
+                    </optgroup>
+
+                    <optgroup label="5. Crushed Stone">
+                      <option value="MOT Type 1 Carboniferous Limestone Sub-Base">MOT Type 1 Carboniferous Limestone (0-40mm)</option>
+                      <option value="MOT Type 1 Hard Granite Sub-Base">MOT Type 1 Hard Granite Sub-Base (0-40mm)</option>
+                      <option value="MOT Type 3 Open-Graded (SuDS Permeable)">MOT Type 3 Open-Graded SuDS Permeable (4-40mm)</option>
+                      <option value="Gabion Basket Stone (100 - 200mm)">Gabion Basket Stone (100-200mm Quarry Rock)</option>
+                      <option value="Crusher Run (0 - 50mm Crushed Limestone)">Crusher Run (0-50mm Crushed Limestone)</option>
+                      <option value="Rip Rap / Rock Armour Stone (150 - 300mm)">Rip Rap / Rock Armour Stone (150-300mm)</option>
+                    </optgroup>
+
+                    <option value="Custom Quarry Blend / Other Spec">Custom Quarry Blend / Other Specification</option>
+                  </select>
+                </div>
+
+                <div class="sm:col-span-5">
+                  <label for="quote-quantity" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Required Quantity <span class="text-gold-400">*</span>
+                  </label>
+                  <div class="flex gap-2">
+                    <input type="number" id="quote-quantity" name="requiredQuantity" min="1" step="0.5" value="20" required class="w-1/2 bg-charcoal-950 border border-earth-800 rounded-xl px-3 py-3 text-xs sm:text-sm text-ivory-50 font-mono font-bold focus:outline-none focus:border-gold-500 transition" placeholder="Amount">
+                    <select id="quote-unit" name="unit" class="w-1/2 bg-charcoal-950 border border-earth-800 rounded-xl px-2 py-3 text-xs text-ivory-50 focus:outline-none focus:border-gold-500 transition font-medium">
+                      <option value="Tonnes (Bulk Loose Tipping)" selected>Tonnes (Loose)</option>
+                      <option value="Bulk Bags (~850kg Drops)">Bulk Bags (~850kg)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Field 7 & 8: Delivery Location & Preferred Delivery Date -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="quote-location" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Delivery Location <span class="text-gold-400">*</span>
+                  </label>
+                  <input type="text" id="quote-location" name="deliveryLocation" required placeholder="e.g. Plot 14, Infrastructure Park, B78 3EQ" class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-ivory-50 placeholder-earth-500 focus:outline-none focus:border-gold-500 transition font-medium">
+                </div>
+
+                <div>
+                  <label for="quote-date" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Preferred Delivery Date <span class="text-gold-400">*</span>
+                  </label>
+                  <input type="date" id="quote-date" name="preferredDeliveryDate" required class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-ivory-50 focus:outline-none focus:border-gold-500 transition font-medium">
+                </div>
+              </div>
+
+              <!-- Optional Haulage Vehicle & Time Window -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="quote-vehicle" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Discharge Vehicle Method
+                  </label>
+                  <select id="quote-vehicle" name="deliveryMethod" class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs text-ivory-50 focus:outline-none focus:border-gold-500 transition font-medium">
+                    <option value="8-Wheel Rigid Tipper (20t Rear Tip)" selected>8-Wheel Rigid Tipper (20t Rear Loose Tip)</option>
+                    <option value="8-Wheel Grab Lorry (16t Crane Over-Wall)">8-Wheel Grab Lorry (16t Crane Over-Wall)</option>
+                    <option value="Hiab Crane Offload (Bulk Bags)">Hiab Crane Offload (Curbside Bulk Bags)</option>
+                    <option value="Articulated Bulk Tipper (28-30t Heavy Civils)">Articulated Bulk Tipper (28-30t Heavy Civils)</option>
+                    <option value="Customer Vehicle Collection at Weighbridge">Customer Vehicle Collection at Weighbridge</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="quote-timeslot" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                    Preferred Time Slot
+                  </label>
+                  <select id="quote-timeslot" name="timeSlot" class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs text-ivory-50 focus:outline-none focus:border-gold-500 transition font-medium">
+                    <option value="Morning (08:00 - 12:00)" selected>Morning (08:00 AM – 12:00 PM)</option>
+                    <option value="First Drop (06:30 - 08:00 AM)">First Drop (06:30 AM – 08:00 AM)</option>
+                    <option value="Afternoon (12:00 - 16:30 PM)">Afternoon (12:00 PM – 16:30 PM)</option>
+                    <option value="Anytime (Flexible Window)">Anytime (Standard Dispatch Window)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Field 9: Additional Requirements -->
+              <div>
+                <label for="quote-additional" class="block text-xs font-bold text-ivory-100 uppercase tracking-wider mb-2 font-heading">
+                  Additional Requirements
+                </label>
+                <textarea id="quote-additional" name="additionalRequirements" rows="3" placeholder="Enter site access constraints (e.g. overhead cables, narrow gateway, soft ground), purchase order reference, or test certificate requests..." class="w-full bg-charcoal-950 border border-earth-800 rounded-xl px-4 py-3 text-xs sm:text-sm text-ivory-50 placeholder-earth-500 focus:outline-none focus:border-gold-500 transition font-medium"></textarea>
+              </div>
+
+              <!-- Submit CTA & Real Working Submission -->
+              <div class="pt-6 border-t border-earth-800 flex flex-col sm:flex-row items-center justify-between gap-5">
+                <div class="text-xs text-sandstone-400 flex items-center gap-2 font-light">
+                  <i data-lucide="shield-check" class="w-4 h-4 text-gold-400 shrink-0"></i>
+                  <span>Guaranteed 30-Day Fixed Rates • Weights & Measures Act Certified</span>
+                </div>
+
+                <button type="submit" id="quote-submit-btn" class="w-full sm:w-auto px-9 py-4 bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold text-xs uppercase tracking-widest rounded-xl transition shadow-xl shadow-gold-500/25 flex items-center justify-center gap-2.5 luxury-glow">
+                  <span>Request Your Quote</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Sidebar Column: Professional Business Enquiry Layout (4 cols) -->
+        <div class="lg:col-span-4 space-y-8">
+          
+          <!-- Business Enquiry Header Block -->
+          <div class="border-b border-earth-800 pb-4">
+            <span class="px-3 py-1 rounded-full bg-gold-950 text-gold-400 font-mono text-[10px] uppercase font-bold tracking-widest border border-gold-700/50 inline-block mb-2">
+              Commercial Procurement
+            </span>
+            <h3 class="text-xl font-black text-ivory-50 uppercase tracking-tight font-heading">
+              Professional Business Enquiries
+            </h3>
+            <p class="text-xs text-sandstone-300 mt-1 leading-relaxed font-light">
+              Dedicated commercial channels for civil engineering contractors, infrastructure tenders, and regional housing developers.
+            </p>
+          </div>
+
+          <!-- Card 1: Commercial Civil Tenders Desk -->
+          <div class="bg-charcoal-900 border border-earth-800 rounded-3xl p-7 shadow-xl luxury-card-hover">
+            <div class="flex items-center gap-2.5 mb-4">
+              <div class="w-8 h-8 rounded-xl bg-charcoal-950 border border-gold-500/30 text-gold-400 flex items-center justify-center">
+                <i data-lucide="briefcase" class="w-4 h-4"></i>
+              </div>
+              <h4 class="text-sm font-bold text-ivory-50 uppercase tracking-wider font-heading">
+                Civil Infrastructure & Tenders
+              </h4>
+            </div>
+            <p class="text-xs text-sandstone-300 leading-relaxed font-light mb-4">
+              Direct desk for high-volume contract frameworks (>1,000 tonnes), highway sub-base packages, and continuous ready-mix concrete mineral supply.
+            </p>
+            <div class="space-y-3 text-xs bg-charcoal-950 p-4 rounded-2xl border border-earth-800 font-mono">
+              <div>
+                <span class="text-earth-400 text-[10px] uppercase tracking-wider block font-sans">Senior Civil Estimator:</span>
+                <a href="tel:01632960844" class="text-gold-400 font-bold hover:underline block text-sm mt-0.5">+44 (0) 1632 960844</a>
+              </div>
+              <div class="pt-2 border-t border-earth-800">
+                <span class="text-earth-400 text-[10px] uppercase tracking-wider block font-sans">Tender Document Inquiries:</span>
+                <a href="mailto:tenders@vanguardaggregates.co.uk" class="text-ivory-100 hover:text-gold-400 text-[11px] truncate block mt-0.5">tenders@vanguardaggregates.co.uk</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: 30-Day Contractor Trade Credit Account -->
+          <div class="bg-charcoal-900 border border-gold-500/30 rounded-3xl p-7 relative luxury-card-hover" id="trade-account">
+            <div class="flex items-center gap-2.5 mb-3">
+              <div class="w-8 h-8 rounded-xl bg-charcoal-950 border border-gold-500/30 text-gold-400 flex items-center justify-center">
+                <i data-lucide="credit-card" class="w-4 h-4"></i>
+              </div>
+              <h4 class="text-sm font-bold text-ivory-50 uppercase font-heading">30-Day Trade Credit Account</h4>
+            </div>
+            <p class="text-xs text-sandstone-300 leading-relaxed mb-4 font-light">
+              Registered contractors and civil groundworkers receive 30-day interest-free credit terms, preferred tonnage tariffs, priority haulage dispatch, and automated digital weighbridge invoice consolidation.
+            </p>
+            <ul class="space-y-2 text-xs text-sandstone-400 mb-5 font-mono text-[11px]">
+              <li class="flex items-center gap-2 text-ivory-100"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Fixed 30-Day Rates Guarantee</li>
+              <li class="flex items-center gap-2 text-ivory-100"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Dedicated Fleet Allocator</li>
+              <li class="flex items-center gap-2 text-ivory-100"><i data-lucide="check" class="w-3.5 h-3.5 text-gold-400"></i> Weights & Measures e-Tickets</li>
+            </ul>
+            <a href="tel:01632960844" class="block w-full text-center py-3 bg-gold-500 hover:bg-gold-400 text-charcoal-950 rounded-xl font-bold text-xs uppercase tracking-widest transition luxury-glow">
+              Apply for Trade Account (10 Mins)
+            </a>
+          </div>
+
+          <!-- Card 3: Quarry Hubs & Direct Weighbridge Extensions -->
+          <div class="bg-charcoal-900 border border-earth-800 rounded-3xl p-7 shadow-xl luxury-card-hover" id="depots">
+            <h4 class="text-sm font-bold text-ivory-50 uppercase tracking-widest font-heading mb-4 flex items-center gap-2.5">
+              <i data-lucide="map-pin" class="w-4 h-4 text-gold-400"></i>
+              Quarry Terminals & Railhead Hubs
+            </h4>
+
+            <div class="space-y-4 text-xs">
+              <!-- Depot 1 -->
+              <div class="p-4 rounded-2xl bg-charcoal-950 border border-earth-800">
+                <div class="flex items-center justify-between mb-1">
+                  <strong class="text-ivory-50 font-heading">Granite Ridge Main Quarry</strong>
+                  <span class="px-2 py-0.5 rounded-full bg-gold-950 text-gold-400 font-mono text-[9px] border border-gold-700/50">Active Plant</span>
+                </div>
+                <p class="text-sandstone-400 font-light text-[11px]">Granite Way, Quarry Hill Industrial Park, B78 3EQ</p>
+                <div class="mt-2 text-[11px] text-earth-400 font-mono flex items-center justify-between">
+                  <span>Weighbridge Line:</span>
+                  <strong class="text-gold-400">+44 (0) 1632 960840</strong>
+                </div>
+              </div>
+
+              <!-- Depot 2 -->
+              <div class="p-4 rounded-2xl bg-charcoal-950 border border-earth-800">
+                <div class="flex items-center justify-between mb-1">
+                  <strong class="text-ivory-50 font-heading">Central Reclamation Hub</strong>
+                  <span class="px-2 py-0.5 rounded-full bg-gold-950 text-gold-400 font-mono text-[9px] border border-gold-700/50">Active Plant</span>
+                </div>
+                <p class="text-sandstone-400 font-light text-[11px]">Phoenix Reclamation Way, Delta Logistics Park, CV4 9TW</p>
+                <div class="mt-2 text-[11px] text-earth-400 font-mono flex items-center justify-between">
+                  <span>Weighbridge Line:</span>
+                  <strong class="text-gold-400">+44 (0) 1632 960841</strong>
+                </div>
+              </div>
+
+              <!-- Depot 3 -->
+              <div class="p-4 rounded-2xl bg-charcoal-950 border border-earth-800">
+                <div class="flex items-center justify-between mb-1">
+                  <strong class="text-ivory-50 font-heading">Southern Estuary Wharf Terminal</strong>
+                  <span class="px-2 py-0.5 rounded-full bg-gold-950 text-gold-400 font-mono text-[9px] border border-gold-700/50">Marine Berth</span>
+                </div>
+                <p class="text-sandstone-400 font-light text-[11px]">Wharf Road, Portside Aggregate Basin, PO1 3AX</p>
+                <div class="mt-2 text-[11px] text-earth-400 font-mono flex items-center justify-between">
+                  <span>Weighbridge Line:</span>
+                  <strong class="text-gold-400">+44 (0) 1632 960842</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Quality & Compliance Assurance -->
+          <div class="bg-charcoal-900 border border-earth-800 rounded-3xl p-6 text-xs text-sandstone-400 space-y-3">
+            <span class="text-xs uppercase font-bold tracking-widest text-gold-400 font-heading block">
+              Certified Quality Compliance
+            </span>
+            <p class="font-light leading-relaxed text-[11px]">
+              All material batches are supplied with calibrated Weights & Measures electronic weighbridge tickets, BS EN 12620 / BS EN 13242 test sheets, and complete Environmental Agency waste carrier licensing.
+            </p>
+            <div class="pt-2 border-t border-earth-800 flex flex-wrap gap-2 text-[10px] font-mono text-earth-400">
+              <span class="px-2 py-0.5 rounded bg-charcoal-950 border border-earth-700 text-ivory-300">FORS Silver</span>
+              <span class="px-2 py-0.5 rounded bg-charcoal-950 border border-earth-700 text-ivory-300">CLOCS Champion</span>
+              <span class="px-2 py-0.5 rounded bg-charcoal-950 border border-earth-700 text-ivory-300">ISO 9001 / 14001</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER: Premium Architectural Dark Footer -->
+  <footer class="bg-charcoal-950 border-t border-earth-800 pt-20 pb-12 text-sandstone-300 text-xs relative overflow-hidden">
+    <!-- Ambient subtle background glow -->
+    <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
+        
+        <!-- Column 1: Brand Logo & Company Description (4 cols) -->
+        <div class="lg:col-span-4 space-y-5">
+          <!-- Logo & Brand Name -->
+          <a href="index.html" class="inline-flex items-center gap-3 group" aria-label="Vanguard Minerals Home">
+            <div class="w-10 h-10 rounded-xl bg-charcoal-900 border border-gold-500/40 flex items-center justify-center text-gold-400 font-bold shadow-lg shadow-gold-500/10 group-hover:border-gold-400 group-hover:scale-105 transition duration-300">
+              <i data-lucide="layers" class="w-5 h-5 stroke-[2]"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 leading-none">
+                <span class="text-xl font-black tracking-tight text-ivory-50 font-heading">VANGUARD</span>
+                <span class="text-xl font-black tracking-tight text-gold-400 font-heading">MINERALS</span>
+              </div>
+              <p class="text-[9px] uppercase tracking-[0.25em] text-sandstone-400 font-medium mt-1">Architectural Aggregates</p>
+            </div>
+          </a>
+
+          <!-- Company Description -->
+          <p class="text-sandstone-400 leading-relaxed font-light text-xs max-w-sm">
+            Premier independent sand and aggregate producer operating quarry washing plants, aggregate railheads, and modern 8-wheel commercial tipper haulage across the United Kingdom. Delivering precision material grading for infrastructure, commercial civil works, and luxury architectural developments.
+          </p>
+
+          <!-- Social Media Icons -->
+          <div>
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold-400 font-heading block mb-2.5">
+              Connect With Central Dispatch
+            </span>
+            <div class="flex items-center gap-2.5">
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="LinkedIn">
+                <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+              <!-- X / Twitter -->
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="X (Twitter)">
+                <svg class="w-3.5 h-3.5 fill-currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <!-- YouTube -->
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="YouTube">
+                <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="Instagram">
+                <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <!-- Facebook -->
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="Facebook">
+                <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Live Fleet & Weighbridge Status -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-charcoal-900 border border-earth-800 text-[11px] font-mono text-sandstone-300">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            <span>Central Weighbridges Open & Active</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Navigation Links (2 cols) -->
+        <div class="lg:col-span-2">
+          <h4 class="text-ivory-50 font-bold uppercase tracking-widest text-[11px] mb-5 font-heading flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Quick Navigation
+          </h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="index.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Home</span></a></li>
+            <li><a href="home-2.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Home 2 (Civil Projects)</span></a></li>
+            <li><a href="products.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Shop (Materials)</span></a></li>
+            <li><a href="about.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>About Us</span></a></li>
+            <li><a href="delivery.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Services & Haulage</span></a></li>
+            <li><a href="blog.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Blog & Guides</span></a></li>
+            <li><a href="pricing.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Pricing & Tariffs</span></a></li>
+            <li><a href="contact.html" class="hover:text-gold-400 transition flex items-center gap-1.5 font-semibold text-gold-400"><span>Contact & Quotes</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Product Categories (3 cols) -->
+        <div class="lg:col-span-3">
+          <h4 class="text-ivory-50 font-bold uppercase tracking-widest text-[11px] mb-5 font-heading flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Product Categories
+          </h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="products.html?category=sand" class="hover:text-gold-400 transition block">Quarried & Alluvial Sand</a></li>
+            <li><a href="products.html?category=manufactured-sand" class="hover:text-gold-400 transition block">Manufactured Sand (M-Sand & P-Sand)</a></li>
+            <li><a href="products.html?category=aggregates" class="hover:text-gold-400 transition block">Concrete & Clean Drainage Aggregates</a></li>
+            <li><a href="products.html?category=gravel" class="hover:text-gold-400 transition block">Decorative & Driveway Gravel</a></li>
+            <li><a href="products.html?category=crushed-stone" class="hover:text-gold-400 transition block">MOT Type 1 Sub-Base & Crushed Stone</a></li>
+            <li><a href="delivery.html#bulk-delivery" class="hover:text-gold-400 transition block text-sandstone-400 italic">Bulk Loose Tipping & Bulk Bags</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Information (3 cols) -->
+        <div class="lg:col-span-3">
+          <h4 class="text-ivory-50 font-bold uppercase tracking-widest text-[11px] mb-5 font-heading flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Contact Information
+          </h4>
+          <div class="space-y-3.5 text-xs">
+            <!-- Phone -->
+            <div>
+              <span class="text-[10px] text-earth-400 uppercase font-semibold block">Toll-Free Weighbridge Hotline:</span>
+              <a href="tel:08008482626" class="text-gold-400 hover:text-gold-300 font-mono font-bold text-sm block mt-0.5">(0800) 848-2626</a>
+              <span class="text-[11px] text-sandstone-400 font-mono">Direct Sales: +44 (0) 1632 960844</span>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <span class="text-[10px] text-earth-400 uppercase font-semibold block">Official Inquiries & Quotes:</span>
+              <a href="mailto:dispatch@vanguardaggregates.co.uk" class="text-ivory-100 hover:text-gold-400 font-mono block text-[11px] truncate mt-0.5">dispatch@vanguardaggregates.co.uk</a>
+              <a href="mailto:quotes@vanguardaggregates.co.uk" class="text-sandstone-400 hover:text-gold-400 font-mono block text-[11px] truncate">quotes@vanguardaggregates.co.uk</a>
+            </div>
+
+            <!-- Location -->
+            <div>
+              <span class="text-[10px] text-earth-400 uppercase font-semibold block">Business Location:</span>
+              <strong class="text-ivory-50 block font-normal">Vanguard Central Quarry Hub</strong>
+              <p class="text-sandstone-400 text-[11px] leading-relaxed">Mineral Way, Granite Ridge, Midlands, B78 3EQ, United Kingdom</p>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="font-mono text-[11px] pt-1">
+              <span class="text-[10px] text-earth-400 uppercase font-sans font-semibold block">Operating Hours:</span>
+              <span class="text-sandstone-300">Mon–Fri: 06:00 – 17:30 | Sat: 07:00 – 12:30</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust & Compliance Bar -->
+      <div class="pt-8 pb-6 border-t border-earth-800/80 flex flex-wrap items-center justify-between gap-4 text-[11px] text-sandstone-400 font-mono">
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold-400"></i> FORS Silver Accredited</span>
+          <span class="text-earth-700">•</span>
+          <span>CLOCS Champion</span>
+          <span class="text-earth-700">•</span>
+          <span>Environment Agency Carrier CBDU189422</span>
+          <span class="text-earth-700">•</span>
+          <span>Weights & Measures Act Calibrated</span>
+        </div>
+        <div class="flex items-center gap-3 text-earth-400 text-[10px]">
+          <span>BS EN 12620</span>
+          <span>•</span>
+          <span>BS EN 13242</span>
+          <span>•</span>
+          <span>SHW Series 800</span>
+        </div>
+      </div>
+
+      <!-- Copyright & Legal Information Strip -->
+      <div class="pt-6 border-t border-earth-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-earth-400 font-mono">
+        <div>
+          &copy; 2026 Vanguard Aggregates & Minerals Co. All rights reserved. Registered in England & Wales.
+        </div>
+        <div class="flex flex-wrap items-center gap-5 text-sandstone-400">
+          <a href="contact.html#quote-builder" class="hover:text-gold-400 transition">Request a Quote</a>
+          <span>•</span>
+          <a href="privacy.html" class="hover:text-gold-400 transition">Privacy Policy</a>
+          <span>•</span>
+          <a href="terms.html" class="hover:text-gold-400 transition">Terms of Supply</a>
+          <span>•</span>
+          <a href="delivery.html#access-checklist" class="hover:text-gold-400 transition">Haulage Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/calculator.js"></script>
+  <script src="assets/js/quote.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

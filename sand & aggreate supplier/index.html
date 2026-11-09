@@ -1,0 +1,1154 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vanguard Aggregates & Minerals | Architectural Sands & Quarried Aggregates</title>
+  <meta name="description" content="Premier quarry operator and aggregate supplier. Mined architectural sands, MOT Type 1, SuDS permeable sub-bases, decorative shingles, and site-direct heavy haulage.">
+  
+  <!-- Tailwind CSS CDN with Custom Architectural Palette -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            charcoal: {
+              950: '#0c0e11',
+              900: '#121418',
+              850: '#171a20',
+              800: '#20242b',
+              700: '#2b3039',
+            },
+            ivory: {
+              50: '#fdfbf7',
+              100: '#f6f3eb',
+              200: '#eae4d5',
+              300: '#d6cdbc',
+            },
+            sandstone: {
+              300: '#d4c8b6',
+              400: '#c2b29c',
+              500: '#a6947b',
+            },
+            gold: {
+              300: '#e2c991',
+              400: '#d4b572',
+              500: '#c5a059',
+              600: '#a8833e',
+              950: '#1a1409',
+            },
+            earth: {
+              600: '#494d55',
+              700: '#33363d',
+              800: '#1f2126',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            heading: ['"Syne"', '"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Cinzel"', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom Architectural Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css?v=2.3">
+</head>
+<body class="bg-charcoal-950 text-ivory-200 flex flex-col min-h-screen selection:bg-gold-500 selection:text-charcoal-950">
+
+        <!-- Fixed Sticky Navigation Bar: Transparent over hero section, solid luxury background on scroll -->
+  <nav id="main-navbar" class="fixed top-0 left-0 right-0 z-50 navbar-transparent transition-all duration-300">
+    <!-- Main Navigation Container -->
+    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 sm:h-22 gap-2 xl:gap-4 transition-all duration-300">
+        <!-- Company Logo & Brand Name -->
+        <a href="index.html" class="flex items-center gap-2.5 sm:gap-3 group shrink-0" aria-label="Vanguard Minerals Home">
+          <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-charcoal-900/90 border border-gold-500/40 flex items-center justify-center text-gold-400 shadow-lg shadow-gold-500/10 group-hover:border-gold-400 group-hover:scale-105 transition duration-300 shrink-0">
+            <i data-lucide="layers" class="w-4 h-4 sm:w-5 sm:h-5 stroke-[2]"></i>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div class="flex items-center gap-1.5 leading-none">
+              <span class="text-lg sm:text-xl xl:text-2xl font-black tracking-tight text-ivory-50 font-heading">VANGUARD</span>
+              <span class="text-lg sm:text-xl xl:text-2xl font-black tracking-tight text-gold-400 font-heading">MINERALS</span>
+            </div>
+            <p class="text-[8px] sm:text-[9px] uppercase tracking-[0.25em] text-sandstone-400 font-medium mt-1 hidden xs:block leading-none">Architectural Aggregates</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links (All on identical horizontal baseline) -->
+        <div class="hidden lg:flex items-center gap-1 xl:gap-1.5 text-[11px] font-bold tracking-wider uppercase whitespace-nowrap shrink-0">
+          <!-- Home Editions Dropdown (Home 1 Up, Home 2 Down) -->
+          <div class="relative group dropdown-container">
+            <button type="button" class="nav-link flex items-center gap-1 cursor-pointer" aria-expanded="false" aria-haspopup="true">
+              <span>HOME</span>
+              <i data-lucide="chevron-down" class="w-3.5 h-3.5 transition-transform duration-300 group-hover:rotate-180 text-gold-400/80"></i>
+            </button>
+            <div class="dropdown-menu absolute left-0 rtl:left-auto rtl:right-0 top-full pt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 pointer-events-none group-hover:pointer-events-auto">
+              <div class="bg-charcoal-900/98 backdrop-blur-2xl border border-earth-700/80 rounded-2xl p-2.5 shadow-2xl space-y-1.5">
+                <!-- Home 1 (Up) -->
+                <a href="index.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-charcoal-800/90 text-sandstone-200 hover:text-gold-400 transition text-[11px] font-bold tracking-normal normal-case border border-transparent hover:border-gold-500/30 group/item">
+                  <div class="w-7 h-7 rounded-lg bg-charcoal-950 flex items-center justify-center text-gold-400 border border-gold-500/20 group-hover/item:border-gold-400 shrink-0">
+                    <i data-lucide="home" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div class="flex flex-col text-left rtl:text-right">
+                    <span class="text-xs font-bold text-ivory-100 group-hover/item:text-gold-400 uppercase tracking-wider">Home 1</span>
+                    <span class="text-[10px] text-sandstone-400 font-normal">Alluvial & Quarried Minerals</span>
+                  </div>
+                </a>
+                <!-- Home 2 (Down) -->
+                <a href="home-2.html" class="flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-charcoal-800/90 text-sandstone-200 hover:text-gold-400 transition text-[11px] font-bold tracking-normal normal-case border border-transparent hover:border-gold-500/30 group/item">
+                  <div class="w-7 h-7 rounded-lg bg-charcoal-950 flex items-center justify-center text-gold-400 border border-gold-500/20 group-hover/item:border-gold-400 shrink-0">
+                    <i data-lucide="compass" class="w-3.5 h-3.5"></i>
+                  </div>
+                  <div class="flex flex-col text-left rtl:text-right">
+                    <span class="text-xs font-bold text-ivory-100 group-hover/item:text-gold-400 uppercase tracking-wider">Home 2</span>
+                    <span class="text-[10px] text-sandstone-400 font-normal">Civil & Mega-Infrastructure</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="products.html" class="nav-link">SHOP</a>
+          <a href="about.html" class="nav-link">ABOUT US</a>
+          <a href="delivery.html" class="nav-link">SERVICES</a>
+          <a href="blog.html" class="nav-link">BLOG</a>
+          <a href="pricing.html" class="nav-link">PRICING</a>
+          <a href="contact.html" class="nav-link">CONTACT</a>
+        </div>
+
+        <!-- Right Side Controls & CTA (With clear separation divider) -->
+        <div class="hidden sm:flex items-center gap-1.5 xl:gap-2 shrink-0">
+          <!-- Elegant Vertical Divider separating Nav Links from Controls -->
+          <div class="nav-divider hidden lg:block"></div>
+
+          <!-- LTR / RTL Toggle -->
+          <button type="button" id="rtl-toggle-btn" class="nav-btn-control bg-charcoal-900/80 border border-earth-800 hover:border-gold-500/50 text-sandstone-300 hover:text-gold-400 transition flex items-center gap-1.5 cursor-pointer" title="Toggle LTR / RTL Direction" aria-label="Toggle Text Direction">
+            <i data-lucide="languages" class="w-4 h-4 text-gold-400"></i>
+            <span class="rtl-label text-[10px] uppercase font-bold tracking-wider">RTL</span>
+          </button>
+
+          <!-- Light / Dark Mode Toggle -->
+          <button type="button" id="theme-toggle-btn" class="nav-btn-control bg-charcoal-900/80 border border-earth-800 hover:border-gold-500/50 text-sandstone-300 hover:text-gold-400 transition flex items-center gap-1.5 cursor-pointer" title="Toggle Light / Dark Mode" aria-label="Toggle Theme Mode">
+            <i data-lucide="sun" class="theme-icon-sun w-4 h-4 text-gold-400 hidden"></i>
+            <i data-lucide="moon" class="theme-icon-moon w-4 h-4 text-gold-400"></i>
+            <span class="theme-label hidden xl:inline text-[10px] uppercase font-bold tracking-wider font-mono">LIGHT</span>
+          </button>
+
+          <!-- Active Quotation Items Counter -->
+          <a href="contact.html#quote-builder" class="nav-btn-cart bg-charcoal-900/80 border border-earth-800 hover:border-gold-500/50 text-ivory-200 transition relative" title="Active Quotation Items">
+            <i data-lucide="clipboard-list" class="w-4 h-4 text-gold-400"></i>
+            <span class="quote-badge-count hidden px-1.5 py-0.2 rounded-full bg-gold-500 text-charcoal-950 font-bold text-[9px] font-mono absolute -top-1 -right-1">0</span>
+          </a>
+
+          <!-- Highlighted Gold "Request a Quote" Button -->
+          <a href="contact.html#quote-builder" class="btn-nav-cta bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold transition shadow-lg shadow-gold-500/25 luxury-glow flex items-center gap-1.5 xl:gap-2 group">
+            <span>REQUEST A QUOTE</span>
+            <i data-lucide="arrow-right" class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform rtl:group-hover:-translate-x-0.5"></i>
+          </a>
+        </div>
+
+        <!-- Mobile / Tablet Controls & Hamburger -->
+        <div class="flex items-center gap-1.5 lg:hidden">
+          <button type="button" class="rtl-toggle-btn p-2 rounded-xl bg-charcoal-900/80 border border-earth-800 text-sandstone-300 hover:text-gold-400 text-xs font-mono font-bold" title="Toggle LTR / RTL">
+            <span class="rtl-label text-[10px]">RTL</span>
+          </button>
+          <button type="button" class="theme-toggle-btn p-2 rounded-xl bg-charcoal-900/80 border border-earth-800 text-sandstone-300 hover:text-gold-400 text-xs" title="Toggle Light / Dark Mode">
+            <i data-lucide="sun" class="theme-icon-sun w-4 h-4 text-gold-400 hidden"></i>
+            <i data-lucide="moon" class="theme-icon-moon w-4 h-4 text-gold-400"></i>
+          </button>
+          <a href="contact.html#quote-builder" class="px-3 py-2 rounded-xl bg-gold-500 text-charcoal-950 font-bold text-[11px] uppercase tracking-wider sm:hidden shadow-md">
+            Quote
+          </a>
+          <button id="mobile-menu-btn" class="p-2 text-sandstone-300 hover:text-white rounded-xl bg-charcoal-900/80 border border-earth-800 hover:border-gold-500/40 transition focus:outline-none" aria-label="Toggle Navigation Drawer">
+            <i data-lucide="menu" id="mobile-menu-icon" class="w-5 h-5"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Responsive Mobile Drawer Menu (Full width, elegant alignment) -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-charcoal-950/98 backdrop-blur-2xl border-b border-earth-800 px-6 pt-5 pb-8 space-y-4 shadow-2xl max-h-[calc(100vh-5rem)] overflow-y-auto">
+      <div class="flex flex-col space-y-1 text-xs font-semibold tracking-wider uppercase divide-y divide-earth-800/40">
+        <!-- Home Editions (Home 1 Up, Home 2 Down) -->
+        <div class="py-2.5">
+          <span class="text-[10px] font-mono uppercase tracking-widest text-gold-400 block mb-1.5 px-1">Home Editions</span>
+          <div class="space-y-1 pl-2 rtl:pl-0 rtl:pr-2 border-l border-gold-500/30 rtl:border-l-0 rtl:border-r">
+            <a href="index.html" class="mobile-nav-link flex items-center justify-between py-2 text-sandstone-300 hover:text-gold-400 transition">
+              <span class="flex items-center gap-2.5"><i data-lucide="home" class="w-3.5 h-3.5 text-gold-400"></i> Home 1 (Alluvial & Minerals)</span>
+              <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+            </a>
+            <a href="home-2.html" class="mobile-nav-link flex items-center justify-between py-2 text-sandstone-300 hover:text-gold-400 transition">
+              <span class="flex items-center gap-2.5"><i data-lucide="compass" class="w-3.5 h-3.5 text-gold-400"></i> Home 2 (Mega Infrastructure)</span>
+              <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+            </a>
+          </div>
+        </div>
+
+        <a href="products.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="package" class="w-4 h-4 text-gold-400/80"></i> Shop (Materials)</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="about.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="landmark" class="w-4 h-4 text-gold-400/80"></i> About Us</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="delivery.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="truck" class="w-4 h-4 text-gold-400/80"></i> Services & Fleet</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="blog.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="book-open" class="w-4 h-4 text-gold-400/80"></i> Blog & Guides</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="pricing.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="badge-dollar-sign" class="w-4 h-4 text-gold-400/80"></i> Pricing & Tariffs</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+        <a href="contact.html" class="mobile-nav-link text-sandstone-300 hover:text-gold-400 flex items-center justify-between py-3 rounded-lg px-2 transition">
+          <span class="flex items-center gap-3"><i data-lucide="mail" class="w-4 h-4 text-gold-400/80"></i> Contact & Quotation</span>
+          <i data-lucide="chevron-right" class="w-3.5 h-3.5 text-earth-600"></i>
+        </a>
+      </div>
+
+      <!-- Highlighted Request a Quote Button & Phone Support -->
+      <div class="pt-4 flex flex-col gap-3">
+        <a href="contact.html#quote-builder" class="w-full text-center py-3.5 bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold rounded-xl text-xs uppercase tracking-widest transition shadow-lg shadow-gold-500/25 flex items-center justify-center gap-2">
+          <span>Request a Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+        <div class="flex items-center justify-between pt-2 px-1 text-xs text-sandstone-400 font-mono">
+          <a href="tel:08008482626" class="flex items-center gap-2 text-gold-400 hover:text-gold-300 transition">
+            <i data-lucide="phone" class="w-3.5 h-3.5"></i>
+            (0800) 848-2626
+          </a>
+          <span class="text-earth-700">•</span>
+          <span>06:00 – 17:30 Mon-Fri</span>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION: Impressive Full-Width Hero Section -->
+  <section class="relative bg-charcoal-950 overflow-hidden min-h-screen flex items-center justify-center pt-32 pb-24 border-b border-earth-800">
+    <!-- Cinematic Sand Quarry & Aggregate Panorama Background Image with Scrim -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1578844251758-2f71da64c96f?auto=format&fit=crop&w=2400&q=90" alt="Cinematic Sand & Aggregate Quarry Operations" class="w-full h-full object-cover object-center opacity-30 mix-blend-luminosity filter brightness-75 contrast-125">
+      <div class="absolute inset-0 bg-gradient-to-b from-charcoal-950/85 via-charcoal-950/70 to-charcoal-950"></div>
+      <div class="absolute inset-0 hero-scrim pointer-events-none"></div>
+      <div class="absolute inset-0 bg-grid-architectural pointer-events-none opacity-40"></div>
+    </div>
+
+    <!-- Architectural Coordinate Line Elements -->
+    <div class="absolute top-28 left-6 hidden lg:block z-10 text-[10px] font-mono text-sandstone-500 tracking-widest uppercase">
+      <span>GRID REF: 53.4808° N, 2.2426° W</span>
+      <span class="block text-gold-500/70">STRATA: HARDSTONE GRANITE / ALLUVIAL SILICA</span>
+    </div>
+    <div class="absolute top-28 right-6 hidden lg:block z-10 text-[10px] font-mono text-sandstone-500 tracking-widest uppercase text-right">
+      <span>LAB REF: UKAS ISO/IEC 17025</span>
+      <span class="block text-gold-500/70">SPEC: BS EN 12620 & SHW 800</span>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <!-- Certification / Badge -->
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-charcoal-900/90 border border-gold-500/30 text-xs font-semibold text-gold-400 mb-8 backdrop-blur-md shadow-xl">
+        <i data-lucide="shield-check" class="w-4 h-4 text-gold-400"></i>
+        <span class="tracking-widest uppercase text-[11px]">Primary Quarry Extraction • Quality-Certified Aggregates</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black text-ivory-50 uppercase tracking-tight leading-[1.03] font-heading max-w-5xl mx-auto">
+        The Foundation of <span class="text-gold-400">Every Great Project.</span>
+      </h1>
+
+      <!-- Subheadline -->
+      <p class="mt-8 text-base sm:text-xl text-sandstone-300 max-w-3xl mx-auto leading-relaxed font-light">
+        Premium sand and aggregates. Reliable supply. Precision delivery. Building the foundations of tomorrow.
+      </p>
+
+      <!-- Primary & Secondary CTAs -->
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-5">
+        <a href="#materials" class="px-8 py-4 rounded-xl bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold text-xs uppercase tracking-widest transition luxury-glow flex items-center gap-2.5 group">
+          <span>Explore Our Materials</span>
+          <i data-lucide="arrow-down" class="w-4 h-4 group-hover:translate-y-0.5 transition-transform"></i>
+        </a>
+        <a href="contact.html#quote-builder" class="px-8 py-4 rounded-xl bg-charcoal-900/90 hover:bg-charcoal-850 border border-gold-500/30 hover:border-gold-400 text-ivory-100 font-bold text-xs uppercase tracking-widest transition flex items-center gap-2.5 backdrop-blur-md">
+          <span>Request a Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 text-gold-400"></i>
+        </a>
+      </div>
+
+      <!-- Trust Bar Metrics -->
+      <div class="mt-16 pt-10 border-t border-earth-800/80 max-w-4xl mx-auto grid grid-cols-2 sm:grid-cols-4 gap-6 text-center">
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-ivory-50 font-mono">650k+</span>
+          <span class="block text-[11px] text-sandstone-400 uppercase tracking-wider mt-1">Tonnes Supplied / Year</span>
+        </div>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-gold-400 font-mono">65+</span>
+          <span class="block text-[11px] text-sandstone-400 uppercase tracking-wider mt-1">Commercial Fleet</span>
+        </div>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-ivory-50 font-mono">100%</span>
+          <span class="block text-[11px] text-sandstone-400 uppercase tracking-wider mt-1">Weighbridge Calibrated</span>
+        </div>
+        <div>
+          <span class="text-2xl sm:text-3xl font-extrabold text-sandstone-300 font-mono">Direct</span>
+          <span class="block text-[11px] text-sandstone-400 uppercase tracking-wider mt-1">Quarry Gate Rates</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Subtle Scroll Indicator Animation -->
+    <a href="#materials" class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 pointer-events-auto z-20 group" aria-label="Scroll to Materials">
+      <span class="text-[9px] uppercase tracking-[0.3em] text-sandstone-400 font-mono group-hover:text-gold-400 transition">Scroll to Explore</span>
+      <div class="w-5 h-9 rounded-full border border-gold-500/40 flex items-start justify-center p-1.5 bg-charcoal-950/60 backdrop-blur-sm group-hover:border-gold-400 transition">
+        <div class="w-1.5 h-2.5 rounded-full bg-gold-400 animate-scroll-bounce"></div>
+      </div>
+    </a>
+  </section>
+
+  <!-- SECTION: Premium Material Categories -->
+  <section id="materials" class="py-24 sm:py-32 bg-charcoal-900 border-b border-earth-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-charcoal-950 border border-gold-500/20 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+            <i data-lucide="layers" class="w-3.5 h-3.5"></i>
+            Architectural Mineral Portfolio
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-ivory-50 uppercase tracking-tight font-heading">
+            Premium <span class="text-gold-400">Material Categories</span>
+          </h2>
+          <p class="mt-3 text-sandstone-300 text-sm sm:text-base max-w-2xl leading-relaxed font-light">
+            Surgically screened, washed, and quality-tested in accordance with British and European mineral standards for uncompromised structural performance.
+          </p>
+        </div>
+        <a href="products.html" class="inline-flex items-center gap-2 px-6 py-3 bg-charcoal-850 hover:bg-charcoal-800 text-ivory-100 rounded-xl text-xs font-bold uppercase tracking-widest border border-earth-700 hover:border-gold-500/40 transition shrink-0">
+          <span>Full Product Catalogue</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5 text-gold-400"></i>
+        </a>
+      </div>
+
+      <!-- 7 Material Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <!-- 1. River Sand -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-xl">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1635604027975-0a0a34a35646?auto=format&fit=crop&w=800&q=80" alt="Natural Washed Alluvial River Sand" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">0 - 4 mm</span>
+            <span class="absolute bottom-3 right-4 px-2.5 py-1 bg-charcoal-900/90 text-sandstone-300 text-[11px] font-medium rounded-lg border border-earth-800">Natural Alluvial</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-gold-400 font-bold mb-1">Specification 01</div>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">River Sand</h3>
+              <p class="text-xs text-sandstone-300 mt-2.5 leading-relaxed font-light">
+                Naturally washed alluvial sand featuring rounded silica grains. Delivers superior workability for high-grade masonry mortars, architectural brickwork, and plastering.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-earth-800 flex items-center justify-between">
+              <span class="text-xs text-sandstone-400 font-mono">BS EN 12620</span>
+              <a href="products.html?category=sand&search=River+Sand" class="text-xs font-bold uppercase tracking-wider text-gold-400 hover:text-gold-300 flex items-center gap-1.5 transition">
+                <span>View Material</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. M-Sand (Manufactured Sand) -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-xl">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1747849291727-6d23f7b51257?auto=format&fit=crop&w=800&q=80" alt="M-Sand Manufactured Sand VSI Crushed" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">0 - 4 mm</span>
+            <span class="absolute bottom-3 right-4 px-2.5 py-1 bg-charcoal-900/90 text-sandstone-300 text-[11px] font-medium rounded-lg border border-earth-800">VSI Engineered</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-gold-400 font-bold mb-1">Specification 02</div>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">M-Sand (Manufactured)</h3>
+              <p class="text-xs text-sandstone-300 mt-2.5 leading-relaxed font-light">
+                Precision-crushed cubical hardstone sand produced via vertical shaft impactors (VSI). Free of clay or organic silt, engineered for high-strength structural concrete.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-earth-800 flex items-center justify-between">
+              <span class="text-xs text-sandstone-400 font-mono">Structural C30/40</span>
+              <a href="products.html?category=manufactured-sand&search=M-Sand" class="text-xs font-bold uppercase tracking-wider text-gold-400 hover:text-gold-300 flex items-center gap-1.5 transition">
+                <span>View Material</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. P-Sand (Plastering Sand) -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-xl">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1781026688566-60da3af1ebe5?auto=format&fit=crop&w=800&q=80" alt="P-Sand Micro Screened Plastering Sand" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">0 - 2.36 mm</span>
+            <span class="absolute bottom-3 right-4 px-2.5 py-1 bg-charcoal-900/90 text-sandstone-300 text-[11px] font-medium rounded-lg border border-earth-800">Micro-Screened</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-gold-400 font-bold mb-1">Specification 03</div>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">P-Sand (Plastering)</h3>
+              <p class="text-xs text-sandstone-300 mt-2.5 leading-relaxed font-light">
+                Micro-screened ultra-fine sand formulated for internal and external wall plastering. Prevents shrinkage micro-cracking and produces a clean, flawless architectural finish.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-earth-800 flex items-center justify-between">
+              <span class="text-xs text-sandstone-400 font-mono">BS EN 13139</span>
+              <a href="products.html?category=manufactured-sand&search=P-Sand" class="text-xs font-bold uppercase tracking-wider text-gold-400 hover:text-gold-300 flex items-center gap-1.5 transition">
+                <span>View Material</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. 20mm Aggregate -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-xl">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1645567849531-40dc40ecb2b9?auto=format&fit=crop&w=800&q=80" alt="20mm Single-Size Concrete Aggregate" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">20 mm Single-Size</span>
+            <span class="absolute bottom-3 right-4 px-2.5 py-1 bg-charcoal-900/90 text-sandstone-300 text-[11px] font-medium rounded-lg border border-earth-800">Clean Crushed</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-gold-400 font-bold mb-1">Specification 04</div>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">20mm Aggregate</h3>
+              <p class="text-xs text-sandstone-300 mt-2.5 leading-relaxed font-light">
+                Clean angular crushed hardstone aggregate complying with BS EN 12620. The standard for reinforced foundation concrete, suspended slabs, lintels, and structural columns.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-earth-800 flex items-center justify-between">
+              <span class="text-xs text-sandstone-400 font-mono">BS EN 12620</span>
+              <a href="products.html?category=aggregates&search=20mm" class="text-xs font-bold uppercase tracking-wider text-gold-400 hover:text-gold-300 flex items-center gap-1.5 transition">
+                <span>View Material</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. 40mm Aggregate -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-xl">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1704175970211-4c2c15b18328?auto=format&fit=crop&w=800&q=80" alt="40mm Clean Drainage Aggregate" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">40 mm Clean</span>
+            <span class="absolute bottom-3 right-4 px-2.5 py-1 bg-charcoal-900/90 text-sandstone-300 text-[11px] font-medium rounded-lg border border-earth-800">High Void Ratio</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-gold-400 font-bold mb-1">Specification 05</div>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">40mm Aggregate</h3>
+              <p class="text-xs text-sandstone-300 mt-2.5 leading-relaxed font-light">
+                Coarse washed stone engineered for deep soakaway stormwater trenches, French drainage lines, civil filter beds, and unpaved heavy vehicle haulage track stabilization.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-earth-800 flex items-center justify-between">
+              <span class="text-xs text-sandstone-400 font-mono">SuDS Drainage</span>
+              <a href="products.html?category=aggregates&search=40mm" class="text-xs font-bold uppercase tracking-wider text-gold-400 hover:text-gold-300 flex items-center gap-1.5 transition">
+                <span>View Material</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Gravel -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-xl">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80" alt="10-20mm Washed Driveway Shingle Gravel" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">10 - 20 mm</span>
+            <span class="absolute bottom-3 right-4 px-2.5 py-1 bg-charcoal-900/90 text-sandstone-300 text-[11px] font-medium rounded-lg border border-earth-800">Washed Shingle</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-gold-400 font-bold mb-1">Specification 06</div>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">Gravel</h3>
+              <p class="text-xs text-sandstone-300 mt-2.5 leading-relaxed font-light">
+                Triple-washed natural round gravels and architectural shingles. Ideal for sub-surface pipe bedding, French drainage conduits, permeable driveways, and decorative paths.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-earth-800 flex items-center justify-between">
+              <span class="text-xs text-sandstone-400 font-mono">BS EN 12620</span>
+              <a href="products.html?category=gravel" class="text-xs font-bold uppercase tracking-wider text-gold-400 hover:text-gold-300 flex items-center gap-1.5 transition">
+                <span>View Material</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Crushed Stone -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-xl lg:col-span-2 xl:col-span-2">
+          <div class="h-52 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?auto=format&fit=crop&w=1000&q=80" alt="Crushed Stone MOT Type 1 Sub-Base" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-85 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">0 - 40 mm</span>
+            <span class="absolute bottom-3 right-4 px-2.5 py-1 bg-charcoal-900/90 text-sandstone-300 text-[11px] font-medium rounded-lg border border-earth-800">SHW Series 800</span>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="text-[10px] uppercase tracking-widest text-gold-400 font-bold mb-1">Specification 07</div>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">Crushed Stone (MOT Type 1 & Sub-Bases)</h3>
+              <p class="text-xs text-sandstone-300 mt-2.5 leading-relaxed font-light">
+                Primary blasted and crushed carboniferous limestone and granite stone. Interlocking angular geometry forms heavy-duty, compaction-certified sub-bases for highways, logistic yards, concrete ground slabs, and access roads.
+              </p>
+            </div>
+            <div class="mt-6 pt-4 border-t border-earth-800 flex items-center justify-between">
+              <span class="text-xs text-sandstone-400 font-mono">DOT / Highway Certified</span>
+              <a href="products.html?category=crushed-stone" class="text-xs font-bold uppercase tracking-wider text-gold-400 hover:text-gold-300 flex items-center gap-1.5 transition">
+                <span>View Material</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Why Choose Us -->
+  <section id="why-choose-us" class="py-24 sm:py-32 bg-charcoal-950 border-b border-earth-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-charcoal-900 border border-gold-500/20 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+          <i data-lucide="check-circle" class="w-3.5 h-3.5"></i>
+          Uncompromising Mineral Standards
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-ivory-50 uppercase tracking-tight font-heading">
+          Engineered Reliability. <span class="text-gold-400">Why Choose Us.</span>
+        </h2>
+        <p class="mt-4 text-sandstone-300 text-sm sm:text-base font-light leading-relaxed">
+          A seamless quarry-to-site partnership built on technical precision, continuous stockpile availability, and dependable logistics.
+        </p>
+      </div>
+
+      <!-- 5 Premium Value Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- 1. Quality-Tested Materials -->
+        <div class="bg-charcoal-900/90 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 transition duration-300 luxury-card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-charcoal-950 border border-gold-500/30 text-gold-400 flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+              <i data-lucide="shield-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-ivory-50 font-heading mb-3">Quality-Tested Materials</h3>
+            <p class="text-xs text-sandstone-300 font-light leading-relaxed">
+              Every mineral batch undergoes rigorous UKAS-accredited sieve analysis, silt content checks, and crushing strength certification under BS EN 12620 and SHW Series 800 standards.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-earth-800 text-[11px] font-mono text-sandstone-400">
+            Certified Traceability & UKAS Lab Data
+          </div>
+        </div>
+
+        <!-- 2. Reliable Supply -->
+        <div class="bg-charcoal-900/90 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 transition duration-300 luxury-card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-charcoal-950 border border-gold-500/30 text-gold-400 flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+              <i data-lucide="factory" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-ivory-50 font-heading mb-3">Reliable Supply</h3>
+            <p class="text-xs text-sandstone-300 font-light leading-relaxed">
+              Captive primary quarry deposits and high-capacity automated washing plants producing over 650,000 tonnes annually guarantee constant stockpiles with zero site stoppage risk.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-earth-800 text-[11px] font-mono text-sandstone-400">
+            650,000+ Tonnes Annual Processing
+          </div>
+        </div>
+
+        <!-- 3. On-Time Delivery -->
+        <div class="bg-charcoal-900/90 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 transition duration-300 luxury-card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-charcoal-950 border border-gold-500/30 text-gold-400 flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+              <i data-lucide="truck" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-ivory-50 font-heading mb-3">On-Time Delivery</h3>
+            <p class="text-xs text-sandstone-300 font-light leading-relaxed">
+              Our modern fleet of 65+ FORS Silver-accredited 8-wheel tippers, grab lorries, and crane offloaders operate under live GPS telemetry, providing precise site dispatch arrival windows.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-earth-800 text-[11px] font-mono text-sandstone-400">
+            Live Telematics & Electronic POD
+          </div>
+        </div>
+
+        <!-- 4. Competitive Pricing -->
+        <div class="bg-charcoal-900/90 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 transition duration-300 luxury-card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-charcoal-950 border border-gold-500/30 text-gold-400 flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+              <i data-lucide="coins" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-ivory-50 font-heading mb-3">Competitive Pricing</h3>
+            <p class="text-xs text-sandstone-300 font-light leading-relaxed">
+              Direct-from-source quarry-gate tariffs with volume-scaled price breaks and transparent commercial 30-day trade accounts, eliminating broker commissions and inflated markups.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-earth-800 text-[11px] font-mono text-sandstone-400">
+            Fixed Spot Rates & Commercial Credit
+          </div>
+        </div>
+
+        <!-- 5. Bulk Order Capability -->
+        <div class="bg-charcoal-900/90 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 transition duration-300 luxury-card-hover flex flex-col justify-between md:col-span-2 lg:col-span-2">
+          <div>
+            <div class="w-12 h-12 rounded-2xl bg-charcoal-950 border border-gold-500/30 text-gold-400 flex items-center justify-center mb-6 shadow-lg shadow-gold-500/10">
+              <i data-lucide="layers" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-xl font-bold text-ivory-50 font-heading mb-3">Bulk Order Capability</h3>
+            <p class="text-xs text-sandstone-300 font-light leading-relaxed">
+              Dedicated railhead distribution sidings, marine wharf access, and coordinated multi-vehicle tipper shuttles capable of moving 1,500+ tonnes daily for highways, airfields, and regional civil engineering infrastructure.
+            </p>
+          </div>
+          <div class="mt-8 pt-4 border-t border-earth-800 text-[11px] font-mono text-sandstone-400 flex items-center justify-between">
+            <span>Railhead Freight & High-Volume Fleet Logistics</span>
+            <span class="text-gold-400 font-bold">1,500+ Tonnes / Day</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Our Impact (Sophisticated Statistics) -->
+  <section id="our-impact" class="py-24 sm:py-28 bg-charcoal-900 border-b border-earth-800 relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid-architectural opacity-40 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-charcoal-950 border border-gold-500/20 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+          <i data-lucide="bar-chart-3" class="w-3.5 h-3.5"></i>
+          Quantitative Track Record
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black text-ivory-50 uppercase tracking-tight font-heading">
+          Precision at Scale. <span class="text-gold-400">Our Proven Impact.</span>
+        </h2>
+        <p class="mt-4 text-sandstone-300 text-sm sm:text-base font-light leading-relaxed">
+          Real metrics engineered across four decades of supplying national infrastructure and landmark projects.
+        </p>
+      </div>
+
+      <!-- 4 Statistics Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Stat 1 -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 text-center luxury-card-hover">
+          <div class="text-4xl sm:text-5xl font-black text-gold-400 font-mono tracking-tight mb-2">40+</div>
+          <h4 class="text-base font-bold text-ivory-50 uppercase tracking-wide font-heading">Years of Experience</h4>
+          <p class="text-xs text-sandstone-400 mt-2 font-light leading-relaxed">
+            Continuous independent quarrying, mineral washing, and aggregate grading since 1984.
+          </p>
+        </div>
+
+        <!-- Stat 2 -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 text-center luxury-card-hover">
+          <div class="text-4xl sm:text-5xl font-black text-ivory-50 font-mono tracking-tight mb-2">3,850+</div>
+          <h4 class="text-base font-bold text-ivory-50 uppercase tracking-wide font-heading">Projects Supplied</h4>
+          <p class="text-xs text-sandstone-400 mt-2 font-light leading-relaxed">
+            Civil highway expansions, commercial high-rises, and private residential estates.
+          </p>
+        </div>
+
+        <!-- Stat 3 -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 text-center luxury-card-hover">
+          <div class="text-4xl sm:text-5xl font-black text-gold-400 font-mono tracking-tight mb-2">12.5M+</div>
+          <h4 class="text-base font-bold text-ivory-50 uppercase tracking-wide font-heading">Tons Delivered</h4>
+          <p class="text-xs text-sandstone-400 mt-2 font-light leading-relaxed">
+            High-specification sands, sub-bases, and crushed aggregates safely hauled to site.
+          </p>
+        </div>
+
+        <!-- Stat 4 -->
+        <div class="bg-charcoal-950 border border-earth-800 hover:border-gold-500/40 rounded-3xl p-8 text-center luxury-card-hover">
+          <div class="text-4xl sm:text-5xl font-black text-ivory-50 font-mono tracking-tight mb-2">99.4%</div>
+          <h4 class="text-base font-bold text-ivory-50 uppercase tracking-wide font-heading">Customer Satisfaction</h4>
+          <p class="text-xs text-sandstone-400 mt-2 font-light leading-relaxed">
+            Weighbridge calibration accuracy, grading compliance, and on-time delivery rate.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Featured Projects -->
+  <section id="featured-projects" class="py-24 sm:py-32 bg-charcoal-950 border-b border-earth-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-charcoal-900 border border-gold-500/20 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+            <i data-lucide="landmark" class="w-3.5 h-3.5"></i>
+            Selected Portfolio
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-ivory-50 uppercase tracking-tight font-heading">
+            Proven in Architecture. <span class="text-gold-400">Featured Projects.</span>
+          </h2>
+          <p class="mt-3 text-sandstone-300 text-sm sm:text-base max-w-2xl leading-relaxed font-light">
+            Supplying the structural backbones for award-winning high-rises, national transport corridors, and premier private estates.
+          </p>
+        </div>
+        <a href="contact.html#quote-builder" class="inline-flex items-center gap-2 px-6 py-3 bg-gold-500 hover:bg-gold-400 text-charcoal-950 rounded-xl text-xs font-bold uppercase tracking-widest transition shadow-lg shadow-gold-500/20 shrink-0">
+          <span>Supply Your Project</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+
+      <!-- 3 Large Image Project Cards -->
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <!-- 1. Infrastructure Project -->
+        <div class="bg-charcoal-900 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-2xl">
+          <div class="h-64 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?auto=format&fit=crop&w=1200&q=85" alt="Civil Infrastructure Project" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3.5 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">Infrastructure</span>
+            <span class="absolute bottom-3 right-4 px-3 py-1 bg-charcoal-900/90 text-ivory-100 text-xs font-mono font-bold rounded-lg border border-earth-800">520,000 Tonnes</span>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase tracking-widest text-sandstone-400 font-bold block mb-1">National Transport Corridor</span>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">High-Speed Rail & Motorway Interchange</h3>
+              <p class="text-xs text-sandstone-300 mt-3 leading-relaxed font-light">
+                Continuous 24-hour tipper shuttle operation supplying sub-base capping and high-void track ballast to stabilize high-speed rail lines and multi-lane highway junctions.
+              </p>
+              <div class="mt-6 pt-4 border-t border-earth-800 text-xs text-sandstone-400 space-y-1">
+                <div>Materials: <strong class="text-ivory-100">MOT Type 1, 40mm Track Ballast, Sharp Sand</strong></div>
+                <div>Timeline: <strong class="text-sandstone-300">18-Month Continuous Phase</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. Commercial Project -->
+        <div class="bg-charcoal-900 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-2xl">
+          <div class="h-64 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1596495578065-6e0763fa1178?auto=format&fit=crop&w=1200&q=85" alt="Commercial Tower Development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3.5 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">Commercial</span>
+            <span class="absolute bottom-3 right-4 px-3 py-1 bg-charcoal-900/90 text-ivory-100 text-xs font-mono font-bold rounded-lg border border-earth-800">145,000 Tonnes</span>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase tracking-widest text-sandstone-400 font-bold block mb-1">Urban Core High-Rise</span>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">Canal Reach Waterfront Financial Tower</h3>
+              <p class="text-xs text-sandstone-300 mt-3 leading-relaxed font-light">
+                High-strength C50 ready-mix concrete mineral supply for a 42-story post-tensioned commercial tower and deep piling marine foundation.
+              </p>
+              <div class="mt-6 pt-4 border-t border-earth-800 text-xs text-sandstone-400 space-y-1">
+                <div>Materials: <strong class="text-ivory-100">Engineered M-Sand, 20mm Single-Size, 6F2 Capping</strong></div>
+                <div>Timeline: <strong class="text-sandstone-300">Complete 2025</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3. Residential Project -->
+        <div class="bg-charcoal-900 border border-earth-800 hover:border-gold-500/50 rounded-3xl overflow-hidden transition duration-500 flex flex-col group luxury-card-hover shadow-2xl">
+          <div class="h-64 relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=85" alt="Luxury Residential Development" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100">
+            <div class="absolute inset-0 image-scrim"></div>
+            <span class="absolute top-4 left-4 px-3.5 py-1 bg-charcoal-950/90 text-gold-400 font-mono text-xs font-bold rounded-full border border-gold-500/30">Residential</span>
+            <span class="absolute bottom-3 right-4 px-3 py-1 bg-charcoal-900/90 text-ivory-100 text-xs font-mono font-bold rounded-lg border border-earth-800">38,000 Tonnes</span>
+          </div>
+          <div class="p-8 flex-1 flex flex-col justify-between">
+            <div>
+              <span class="text-[10px] uppercase tracking-widest text-sandstone-400 font-bold block mb-1">Architectural Private Estate</span>
+              <h3 class="text-xl font-bold text-ivory-50 group-hover:text-gold-400 transition font-heading">Crown Hill Architectural Villa Enclave</h3>
+              <p class="text-xs text-sandstone-300 mt-3 leading-relaxed font-light">
+                Precision stone bedding sand, micro-screened plastering aggregates, and SuDS-compliant decorative gravel driveways for 45 luxury architectural residences.
+              </p>
+              <div class="mt-6 pt-4 border-t border-earth-800 text-xs text-sandstone-400 space-y-1">
+                <div>Materials: <strong class="text-ivory-100">P-Sand, River Sand, 10mm Washed Pea Gravel, Topsoil</strong></div>
+                <div>Timeline: <strong class="text-sandstone-300">Phase II Active</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Interactive Material Tonnage Estimator Tool -->
+  <section id="calculator" class="py-24 sm:py-32 bg-charcoal-900 border-b border-earth-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+        <!-- Info Column -->
+        <div class="lg:col-span-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-charcoal-950 border border-gold-500/20 text-gold-400 text-xs font-semibold uppercase tracking-widest mb-4">
+            <i data-lucide="scale" class="w-3.5 h-3.5"></i>
+            Site Tool
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black text-ivory-50 uppercase tracking-tight font-heading">
+            Quarry Tonnage <span class="text-gold-400">Estimator</span>
+          </h2>
+          <p class="mt-4 text-sandstone-300 text-sm sm:text-base leading-relaxed font-light">
+            Eliminate project guesswork. Enter your site dimensions to convert area volume ($m^3$) into precision quarry bulk density tonnages, complete with haulage lorry allocations and optional compaction buffers.
+          </p>
+
+          <div class="mt-8 space-y-3.5 text-xs text-sandstone-400">
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+              <span>Calculated using laboratory loose bulk densities ($1.25\text{ to }2.1\text{ t/m}^3$).</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+              <span>Recommended +10% compaction and sub-grade settlement allowance.</span>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-2 h-2 rounded-full bg-gold-400"></span>
+              <span>Direct payload allocation for 8-wheel rigid tippers (20t capacity).</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Calculator Form Column -->
+        <div class="lg:col-span-6">
+          <div class="bg-charcoal-950 border border-earth-800 rounded-3xl p-7 sm:p-9 shadow-2xl relative overflow-hidden luxury-card-hover">
+            <div class="flex items-center justify-between border-b border-earth-800 pb-5 mb-6">
+              <div class="flex items-center gap-3">
+                <div class="p-2.5 rounded-xl bg-charcoal-900 border border-gold-500/30 text-gold-400">
+                  <i data-lucide="calculator" class="w-5 h-5"></i>
+                </div>
+                <div>
+                  <h3 class="text-lg font-bold uppercase text-ivory-50 font-heading tracking-wide">Live Material Calculator</h3>
+                  <p class="text-xs text-sandstone-400">Volume to specific-gravity conversion</p>
+                </div>
+              </div>
+              <span class="text-[10px] font-mono uppercase bg-charcoal-900 px-2.5 py-1 rounded-full text-gold-400 border border-gold-500/20">Auto-Calculate</span>
+            </div>
+
+            <!-- Live Calculator Form -->
+            <form id="home-calculator-form" class="space-y-4">
+              <!-- Material selection -->
+              <div>
+                <label class="block text-[11px] font-bold uppercase tracking-wider text-sandstone-400 mb-1.5">Select Mineral Specification</label>
+                <select id="calc-material" class="w-full bg-charcoal-900 border border-earth-800 rounded-xl px-4 py-3 text-xs text-ivory-50 focus:outline-none focus:border-gold-500 transition font-medium">
+                  <option value="mot-type-1" selected>MOT Type 1 Sub-Base (Limestone/Granite ~2.1 t/m³)</option>
+                  <option value="sharp-sand">M-Sand / Sharp Sand (Concrete & Screed ~1.6 t/m³)</option>
+                  <option value="building-sand">River Sand / Building Sand (~1.55 t/m³)</option>
+                  <option value="pea-gravel-10mm">10mm Pea Gravel Shingle (~1.6 t/m³)</option>
+                  <option value="drainage-gravel-20mm">20mm Aggregate / Drainage Stone (~1.6 t/m³)</option>
+                  <option value="all-in-ballast">All-In Concreting Ballast (~1.95 t/m³)</option>
+                  <option value="screened-topsoil-bs3882">Screened Topsoil (BS3882 ~1.25 t/m³)</option>
+                  <option value="recycled-type-1-crushed-concrete">Recycled Crushed Concrete (~1.95 t/m³)</option>
+                </select>
+              </div>
+
+              <!-- Dimensions Input Grid -->
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label class="block text-[10px] uppercase tracking-wider font-semibold text-sandstone-400 mb-1">Geometry</label>
+                  <select id="calc-shape" class="w-full bg-charcoal-900 border border-earth-800 rounded-xl px-3 py-2.5 text-xs text-ivory-100 focus:outline-none focus:border-gold-500">
+                    <option value="rectangle">Rectangular Area</option>
+                    <option value="circle">Circular / Round Area</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-[10px] uppercase tracking-wider font-semibold text-sandstone-400 mb-1">Depth (Millimeters)</label>
+                  <input type="number" id="calc-depth" value="100" min="10" step="10" class="w-full bg-charcoal-900 border border-earth-800 rounded-xl px-3 py-2.5 text-xs text-ivory-50 focus:outline-none focus:border-gold-500 font-mono">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-2 gap-3">
+                <div>
+                  <label id="calc-dim1-label" class="block text-[10px] uppercase tracking-wider font-semibold text-sandstone-400 mb-1">Length (Meters)</label>
+                  <input type="number" id="calc-length" value="12" min="0.5" step="0.5" class="w-full bg-charcoal-900 border border-earth-800 rounded-xl px-3 py-2.5 text-xs text-ivory-50 focus:outline-none focus:border-gold-500 font-mono">
+                </div>
+                <div id="calc-width-container">
+                  <label class="block text-[10px] uppercase tracking-wider font-semibold text-sandstone-400 mb-1">Width (Meters)</label>
+                  <input type="number" id="calc-width" value="6" min="0.5" step="0.5" class="w-full bg-charcoal-900 border border-earth-800 rounded-xl px-3 py-2.5 text-xs text-ivory-50 focus:outline-none focus:border-gold-500 font-mono">
+                </div>
+              </div>
+
+              <!-- Compaction Buffer Toggle -->
+              <div class="flex items-center gap-2.5 pt-1.5">
+                <input type="checkbox" id="calc-buffer" checked class="rounded border-earth-700 text-gold-500 focus:ring-0 bg-charcoal-900 w-4 h-4 cursor-pointer accent-gold-500">
+                <label for="calc-buffer" class="text-xs text-sandstone-300 cursor-pointer">
+                  Include <strong>+10%</strong> compaction & grade wastage buffer
+                </label>
+              </div>
+
+              <!-- Output Display Panel -->
+              <div class="mt-5 p-5 rounded-2xl bg-charcoal-900 border border-earth-800">
+                <div class="grid grid-cols-2 gap-4 text-center border-b border-earth-800 pb-3 mb-3">
+                  <div>
+                    <span class="text-[10px] uppercase tracking-widest text-sandstone-400 block font-semibold">Net Volume</span>
+                    <span id="calc-result-volume" class="text-xl font-black text-ivory-50 font-mono">7.92 m³</span>
+                  </div>
+                  <div>
+                    <span class="text-[10px] uppercase tracking-widest text-gold-400 block font-semibold">Total Required</span>
+                    <span id="calc-result-tonnes" class="text-2xl font-black text-gold-400 font-mono">17 Tonnes</span>
+                  </div>
+                </div>
+
+                <!-- Load Breakdown -->
+                <div class="space-y-1.5 text-xs text-sandstone-300">
+                  <div class="flex items-center justify-between">
+                    <span class="text-sandstone-400 flex items-center gap-1.5">
+                      <i data-lucide="truck" class="w-3.5 h-3.5 text-gold-400"></i>
+                      Loose Tipper Requirement:
+                    </span>
+                    <strong id="calc-result-tippers" class="text-ivory-100 font-mono">1 Load (8-Wheel Rigid)</strong>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <span class="text-sandstone-400 flex items-center gap-1.5">
+                      <i data-lucide="package" class="w-3.5 h-3.5 text-sandstone-400"></i>
+                      Bulk Bag Equivalent:
+                    </span>
+                    <strong id="calc-result-bags" class="text-sandstone-300 font-mono">20 Bags (~850kg)</strong>
+                  </div>
+                </div>
+
+                <p id="calc-result-summary" class="text-[10px] text-sandstone-400 mt-3 italic leading-tight">
+                  Based on MOT Type 1 bulk density of 2.1 t/m³ with 10% compaction & grade allowance.
+                </p>
+              </div>
+
+              <!-- Transfer calculation to formal quote -->
+              <button type="button" id="calc-apply-quote-btn" class="w-full py-3.5 rounded-xl bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold text-xs uppercase tracking-widest transition flex items-center justify-center gap-2 shadow-lg shadow-gold-500/20 luxury-glow">
+                <span>Apply Estimate to Formal Quote</span>
+                <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION: Final Call to Action -->
+  <section class="py-24 sm:py-32 bg-charcoal-950 border-b border-earth-800 relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid-architectural opacity-50 pointer-events-none"></div>
+    <!-- Ambient gold glow backdrops -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <span class="inline-block text-[11px] uppercase font-bold tracking-[0.25em] text-gold-400 bg-charcoal-900 border border-gold-500/30 px-4 py-1.5 rounded-full mb-6">
+        Direct Quarry Supply & Rapid Logistics
+      </span>
+
+      <!-- Final CTA Headline -->
+      <h2 class="text-4xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight text-ivory-50 font-heading max-w-4xl mx-auto">
+        Build Strong. <span class="text-gold-400">Build with Confidence.</span>
+      </h2>
+
+      <p class="text-sandstone-300 font-light text-base sm:text-lg mt-6 max-w-2xl mx-auto leading-relaxed">
+        Direct quarry-gate pricing, verified sieve analysis, and flexible fleet logistics tailored to your exact project timeline. Partner with Vanguard today.
+      </p>
+
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-5">
+        <!-- Final CTA Button -->
+        <a href="contact.html#quote-builder" class="px-9 py-4 bg-gold-500 hover:bg-gold-400 text-charcoal-950 font-bold text-xs uppercase tracking-widest rounded-xl transition shadow-xl luxury-glow flex items-center gap-2 group">
+          <span>Request Your Quote</span>
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-0.5 transition-transform"></i>
+        </a>
+        <a href="tel:08008482626" class="px-8 py-4 bg-charcoal-900 hover:bg-charcoal-850 border border-earth-700 hover:border-gold-500/40 text-ivory-50 font-bold text-xs uppercase tracking-widest rounded-xl transition shadow-xl flex items-center gap-2 font-mono">
+          <i data-lucide="phone" class="w-4 h-4 text-gold-400"></i>
+          <span>(0800) 848-2626</span>
+        </a>
+      </div>
+
+      <div class="mt-12 flex flex-wrap items-center justify-center gap-8 text-xs text-sandstone-400">
+        <span class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-400"></i> No Obligation Quotation</span>
+        <span class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-400"></i> Same-Day Dispatch Available</span>
+        <span class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-gold-400"></i> Certified Weighbridge Accuracy</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER: Premium Architectural Dark Footer -->
+  <footer class="bg-charcoal-950 border-t border-earth-800 pt-20 pb-12 text-sandstone-300 text-xs relative overflow-hidden">
+    <!-- Ambient subtle background glow -->
+    <div class="absolute bottom-0 left-1/4 w-96 h-96 bg-gold-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8 mb-16">
+        
+        <!-- Column 1: Brand Logo & Company Description (4 cols) -->
+        <div class="lg:col-span-4 space-y-5">
+          <!-- Logo & Brand Name -->
+          <a href="index.html" class="inline-flex items-center gap-3 group" aria-label="Vanguard Minerals Home">
+            <div class="w-10 h-10 rounded-xl bg-charcoal-900 border border-gold-500/40 flex items-center justify-center text-gold-400 font-bold shadow-lg shadow-gold-500/10 group-hover:border-gold-400 group-hover:scale-105 transition duration-300">
+              <i data-lucide="layers" class="w-5 h-5 stroke-[2]"></i>
+            </div>
+            <div>
+              <div class="flex items-center gap-1.5 leading-none">
+                <span class="text-xl font-black tracking-tight text-ivory-50 font-heading">VANGUARD</span>
+                <span class="text-xl font-black tracking-tight text-gold-400 font-heading">MINERALS</span>
+              </div>
+              <p class="text-[9px] uppercase tracking-[0.25em] text-sandstone-400 font-medium mt-1">Architectural Aggregates</p>
+            </div>
+          </a>
+
+          <!-- Company Description -->
+          <p class="text-sandstone-400 leading-relaxed font-light text-xs max-w-sm">
+            Premier independent sand and aggregate producer operating quarry washing plants, aggregate railheads, and modern 8-wheel commercial tipper haulage across the United Kingdom. Delivering precision material grading for infrastructure, commercial civil works, and luxury architectural developments.
+          </p>
+
+          <!-- Social Media Icons -->
+          <div>
+            <span class="text-[10px] uppercase font-bold tracking-widest text-gold-400 font-heading block mb-2.5">
+              Connect With Central Dispatch
+            </span>
+            <div class="flex items-center gap-2.5">
+              <!-- LinkedIn -->
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="LinkedIn">
+                <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+              </a>
+              <!-- X / Twitter -->
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="X (Twitter)">
+                <svg class="w-3.5 h-3.5 fill-currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <!-- YouTube -->
+              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="YouTube">
+                <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <!-- Instagram -->
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="Instagram">
+                <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <!-- Facebook -->
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-charcoal-900 border border-earth-800 text-sandstone-300 hover:text-gold-400 hover:border-gold-500/50 hover:bg-charcoal-850 transition duration-300 flex items-center justify-center shadow-md" aria-label="Facebook">
+                <svg class="w-4 h-4 fill-currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Live Fleet & Weighbridge Status -->
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-charcoal-900 border border-earth-800 text-[11px] font-mono text-sandstone-300">
+            <span class="w-2 h-2 rounded-full bg-gold-400 animate-pulse"></span>
+            <span>Central Weighbridges Open & Active</span>
+          </div>
+        </div>
+
+        <!-- Column 2: Quick Navigation Links (2 cols) -->
+        <div class="lg:col-span-2">
+          <h4 class="text-ivory-50 font-bold uppercase tracking-widest text-[11px] mb-5 font-heading flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Quick Navigation
+          </h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="index.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Home</span></a></li>
+            <li><a href="home-2.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Home 2 (Civil Projects)</span></a></li>
+            <li><a href="products.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Shop (Materials)</span></a></li>
+            <li><a href="about.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>About Us</span></a></li>
+            <li><a href="delivery.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Services & Haulage</span></a></li>
+            <li><a href="blog.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Blog & Guides</span></a></li>
+            <li><a href="pricing.html" class="hover:text-gold-400 transition flex items-center gap-1.5"><span>Pricing & Tariffs</span></a></li>
+            <li><a href="contact.html" class="hover:text-gold-400 transition flex items-center gap-1.5 font-semibold text-gold-400"><span>Contact & Quotes</span></a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Product Categories (3 cols) -->
+        <div class="lg:col-span-3">
+          <h4 class="text-ivory-50 font-bold uppercase tracking-widest text-[11px] mb-5 font-heading flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Product Categories
+          </h4>
+          <ul class="space-y-2.5 text-xs">
+            <li><a href="products.html?category=sand" class="hover:text-gold-400 transition block">Quarried & Alluvial Sand</a></li>
+            <li><a href="products.html?category=manufactured-sand" class="hover:text-gold-400 transition block">Manufactured Sand (M-Sand & P-Sand)</a></li>
+            <li><a href="products.html?category=aggregates" class="hover:text-gold-400 transition block">Concrete & Clean Drainage Aggregates</a></li>
+            <li><a href="products.html?category=gravel" class="hover:text-gold-400 transition block">Decorative & Driveway Gravel</a></li>
+            <li><a href="products.html?category=crushed-stone" class="hover:text-gold-400 transition block">MOT Type 1 Sub-Base & Crushed Stone</a></li>
+            <li><a href="delivery.html#bulk-delivery" class="hover:text-gold-400 transition block text-sandstone-400 italic">Bulk Loose Tipping & Bulk Bags</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Contact Information (3 cols) -->
+        <div class="lg:col-span-3">
+          <h4 class="text-ivory-50 font-bold uppercase tracking-widest text-[11px] mb-5 font-heading flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+            Contact Information
+          </h4>
+          <div class="space-y-3.5 text-xs">
+            <!-- Phone -->
+            <div>
+              <span class="text-[10px] text-earth-400 uppercase font-semibold block">Toll-Free Weighbridge Hotline:</span>
+              <a href="tel:08008482626" class="text-gold-400 hover:text-gold-300 font-mono font-bold text-sm block mt-0.5">(0800) 848-2626</a>
+              <span class="text-[11px] text-sandstone-400 font-mono">Direct Sales: +44 (0) 1632 960844</span>
+            </div>
+
+            <!-- Email -->
+            <div>
+              <span class="text-[10px] text-earth-400 uppercase font-semibold block">Official Inquiries & Quotes:</span>
+              <a href="mailto:dispatch@vanguardaggregates.co.uk" class="text-ivory-100 hover:text-gold-400 font-mono block text-[11px] truncate mt-0.5">dispatch@vanguardaggregates.co.uk</a>
+              <a href="mailto:quotes@vanguardaggregates.co.uk" class="text-sandstone-400 hover:text-gold-400 font-mono block text-[11px] truncate">quotes@vanguardaggregates.co.uk</a>
+            </div>
+
+            <!-- Location -->
+            <div>
+              <span class="text-[10px] text-earth-400 uppercase font-semibold block">Business Location:</span>
+              <strong class="text-ivory-50 block font-normal">Vanguard Central Quarry Hub</strong>
+              <p class="text-sandstone-400 text-[11px] leading-relaxed">Mineral Way, Granite Ridge, Midlands, B78 3EQ, United Kingdom</p>
+            </div>
+
+            <!-- Business Hours -->
+            <div class="font-mono text-[11px] pt-1">
+              <span class="text-[10px] text-earth-400 uppercase font-sans font-semibold block">Operating Hours:</span>
+              <span class="text-sandstone-300">Mon–Fri: 06:00 – 17:30 | Sat: 07:00 – 12:30</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust & Compliance Bar -->
+      <div class="pt-8 pb-6 border-t border-earth-800/80 flex flex-wrap items-center justify-between gap-4 text-[11px] text-sandstone-400 font-mono">
+        <div class="flex flex-wrap items-center gap-4">
+          <span class="flex items-center gap-1.5"><i data-lucide="shield-check" class="w-3.5 h-3.5 text-gold-400"></i> FORS Silver Accredited</span>
+          <span class="text-earth-700">•</span>
+          <span>CLOCS Champion</span>
+          <span class="text-earth-700">•</span>
+          <span>Environment Agency Carrier CBDU189422</span>
+          <span class="text-earth-700">•</span>
+          <span>Weights & Measures Act Calibrated</span>
+        </div>
+        <div class="flex items-center gap-3 text-earth-400 text-[10px]">
+          <span>BS EN 12620</span>
+          <span>•</span>
+          <span>BS EN 13242</span>
+          <span>•</span>
+          <span>SHW Series 800</span>
+        </div>
+      </div>
+
+      <!-- Copyright & Legal Information Strip -->
+      <div class="pt-6 border-t border-earth-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-earth-400 font-mono">
+        <div>
+          &copy; 2026 Vanguard Aggregates & Minerals Co. All rights reserved. Registered in England & Wales.
+        </div>
+        <div class="flex flex-wrap items-center gap-5 text-sandstone-400">
+          <a href="contact.html#quote-builder" class="hover:text-gold-400 transition">Request a Quote</a>
+          <span>•</span>
+          <a href="privacy.html" class="hover:text-gold-400 transition">Privacy Policy</a>
+          <span>•</span>
+          <a href="terms.html" class="hover:text-gold-400 transition">Terms of Supply</a>
+          <span>•</span>
+          <a href="delivery.html#access-checklist" class="hover:text-gold-400 transition">Haulage Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/calculator.js"></script>
+  <script src="assets/js/quote.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
